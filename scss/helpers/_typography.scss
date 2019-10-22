@@ -1,0 +1,63 @@
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-base;
+	font-weight: 400;
+
+	margin: 0 0 1.2em;
+
+	color: $text-color-base;
+	&:only-child {
+		margin: 0;
+	}
+	&:last-child {
+		margin: 0;
+	}
+}
+/* Text Elements */
+p {
+	margin: 0 0 20px;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: 700; //extra bold;
+	text-transform: uppercase;
+	color: $color-white;
+	@include mq(sm) {
+		@include font-size(40, 80);
+	}
+	@include mq(xl) {
+		font-size: 80px;
+	}
+}
+
+h2 {
+	font-size: 30px;
+	color: $color-3;
+	font-weight: 700; //extra bold
+	text-transform: uppercase;
+	@include mq(sm) {
+		@include font-size(30, 48);
+	}
+	@include mq(xl) {
+		font-size: 48px;
+	}
+}
+h3 {
+	font-size: 20px;
+	font-weight: 700; //extra bold
+	@include mq(sm) {
+		@include font-size(20, 24);
+	}
+	@include mq(xl) {
+		font-size: 24px;
+	}
+}

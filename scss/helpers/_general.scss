@@ -1,0 +1,141 @@
+//
+// ----------------------------------------
+// GENERAL
+//
+// The most general styles for
+// <html>, <body> and .container
+//
+// Set font and clear body padding
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+button,
+a,
+input,
+select,
+textarea {
+	font-family: $font-base;
+}
+
+body {
+	font-size: 20px;
+	@include mq(sm) {
+		@include font-size(20, 24);
+	}
+	@include mq(xl) {
+		font-size: 24px;
+	}
+	line-height: $line-height-base;
+
+	overflow-x: hidden;
+
+	margin: 0;
+
+	color: $text-color-base;
+
+	-webkit-font-smoothing: antialiased;
+	-ms-scroll-limit-x-max: 100%;
+	-ms-scroll-limit-x-min: 0;
+}
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 720px;
+}
+
+figure {
+	margin: 0;
+}
+// Make all images responsive
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+// Normalize links across browsers
+a {
+	text-decoration: none;
+
+	color: $link-color;
+	img {
+		border: 0;
+	}
+}
+
+a:focus,
+a:hover {
+	color: $link-hover-color;
+}
+// Inputs
+textarea,
+input[type='“text”'],
+input[type='“button”'],
+input[type='“submit”'],
+input[type='“search”'] {
+	-webkit-appearance: none;
+	border-radius: 0;
+}
+::-ms-clear {
+	display: none;
+}
+// Make inputs on iOS look normal
+input {
+	&:not([type='checkbox']):not([type='radio']) {
+		-webkit-appearance: none;
+	}
+}
+
+// WordPress specific base styles.
+
+.gm-style img {
+	max-width: none;
+}
+
+.media img,
+.media video,
+.media object,
+.media iframe {
+	width: 100%;
+	height: auto;
+}
+
+// Make WordPress media inserted to post behave correctly
+.wp-caption {
+	width: auto !important;
+	figure {
+		margin: 0;
+		width: auto !important;
+	}
+}
+
+// Make a 404 page look nicer and more readable
+.page-content--404 {
+	text-align: center;
+	ul {
+		text-align: left;
+	}
+}
+
+.navigation.pagination {
+	clear: both;
+}
+
+// WP navigation menus are lists, but they don't need default list styling
+nav {
+	ul {
+		margin: 0;
+		padding: 0;
+
+		list-style: none;
+	}
+	li {
+		display: inline-block;
+	}
+}
