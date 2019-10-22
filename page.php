@@ -11,7 +11,6 @@ the_post();
             <h1><?php the_title(); ?></h1>
             <div class="page-entry"><?php
                 the_content();
-                echo get_template_directory_uri();
             ?></div>
         </div>
 	</main>

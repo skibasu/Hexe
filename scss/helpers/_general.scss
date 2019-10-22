@@ -43,10 +43,12 @@ body {
 }
 
 .container {
-	width: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 15px;
-	max-width: 720px;
+	padding: 0 30px;
+	// @include mq(lg) {
+	// 	padding: 0 15px;
+	// }
 }
 
 figure {
@@ -54,7 +56,6 @@ figure {
 }
 // Make all images responsive
 img {
-	display: block;
 	max-width: 100%;
 	height: auto;
 }

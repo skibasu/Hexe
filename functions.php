@@ -5,3 +5,6 @@ require_once( get_template_directory() . '/includes/acf-settings-page/acf-settin
 
 /* theme scripts and styles */
 require_once( get_template_directory() . '/includes/scripts-styles/scripts-styles.php' );
+
+/*activate menus */
+require_once( get_template_directory() . '/includes/activate-support/activate-support.php' );

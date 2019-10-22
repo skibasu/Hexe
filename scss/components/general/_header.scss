@@ -1,0 +1,59 @@
+.main-header {
+	&__wrapper {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		padding: 30px 0;
+		@include mq(md) {
+			padding: 40px 0;
+		}
+		@include mq(lg) {
+			padding: 50px 0;
+		}
+	}
+	&__main-nav {
+		display: none;
+		@include mq(lg) {
+			display: flex;
+			flex: 1 0 auto;
+			align-items: center;
+		}
+
+		ul {
+			margin-left: auto;
+			padding-left: 60px;
+
+			li {
+				margin-right: 12px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					display: inline-block;
+					font-family: $font-extrabold;
+					font-size: 18px;
+					font-weight: 400;
+					text-transform: uppercase;
+					color: $color-white;
+				}
+			}
+		}
+	}
+	.page-logo {
+		flex: 0 0 auto;
+		width: 98px;
+		height: auto;
+		@include mq(md) {
+			width: 160px;
+		}
+		@include mq(lg) {
+			width: auto;
+		}
+	}
+	.hamburger {
+		margin-left: auto;
+	}
+}
+body {
+	background-color: black !important;
+}

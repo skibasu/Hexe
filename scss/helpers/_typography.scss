@@ -28,7 +28,8 @@ p {
 
 h1 {
 	font-size: 20px;
-	font-weight: 700; //extra bold;
+	font-family: $font-extrabold;
+	font-weight: normal;
 	text-transform: uppercase;
 	color: $color-white;
 	@include mq(sm) {
@@ -41,8 +42,9 @@ h1 {
 
 h2 {
 	font-size: 30px;
+	font-family: $font-extrabold;
+	font-weight: normal;
 	color: $color-3;
-	font-weight: 700; //extra bold
 	text-transform: uppercase;
 	@include mq(sm) {
 		@include font-size(30, 48);
@@ -53,7 +55,8 @@ h2 {
 }
 h3 {
 	font-size: 20px;
-	font-weight: 700; //extra bold
+	font-family: $font-extrabold;
+	font-weight: normal;
 	@include mq(sm) {
 		@include font-size(20, 24);
 	}
