@@ -1,15 +1,19 @@
 .btn {
-	font-size: 12px;
+	font-size: 13px;
 	font-family: $font-extrabold;
 	font-weight: normal;
-	letter-spacing: 1.28px;
+	letter-spacing: 1.06px;
 	display: inline-block;
 	color: $color-white;
 	cursor: pointer;
-	padding: 20px 30px;
+	padding: 11px 31px;
+	@include mq(sm) {
+		font-size: 15px;
+	}
 	@include mq(xl) {
 		font-size: 18px;
 		padding: 13px 42px;
+		letter-spacing: 1.28px;
 	}
 	text-transform: uppercase;
 
@@ -50,11 +54,11 @@
 	}
 	&__item {
 		width: 32px;
-		height: 4px;
+		height: 3px;
 		display: block;
 		background-color: $color-white;
 		&:not(:last-child) {
-			margin-bottom: 3px;
+			margin-bottom: 4px;
 		}
 	}
 }

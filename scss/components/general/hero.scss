@@ -1,8 +1,22 @@
 .hero {
 	width: 100%;
-	padding-top: calc(66px + 197px);
-	padding-bottom: 80px;
+	padding-top: calc(5px + 111px);
+	padding-bottom: 40px;
+	@include mq(md) {
+		padding-top: calc(5px + 160px);
+		padding-bottom: 60px;
+	}
+	@include mq(lg) {
+		padding-top: calc(66px + 197px);
+		padding-bottom: 80px;
+	}
 }
 .home .hero {
-	padding-bottom: 139px;
+	padding-bottom: 65px;
+	@include mq(md) {
+		padding-bottom: 90px;
+	}
+	@include mq(lg) {
+		padding-bottom: 139px;
+	}
 }

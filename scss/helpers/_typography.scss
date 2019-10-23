@@ -26,11 +26,12 @@ p {
 }
 
 h1 {
-	font-size: 20px;
+	font-size: 32px;
 	font-family: $font-extrabold;
 	font-weight: normal;
 	text-transform: uppercase;
 	color: $color-white;
+	margin: 0 0 34px;
 	@include mq(sm) {
 		@include font-size(40, 80);
 	}
