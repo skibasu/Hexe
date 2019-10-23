@@ -8,3 +8,6 @@ require_once( get_template_directory() . '/includes/scripts-styles/scripts-style
 
 /*activate menus */
 require_once( get_template_directory() . '/includes/activate-support/activate-support.php' );
+
+/* register shordcodes */
+require_once( get_template_directory() . '/includes/register-shordcodes/register-shordcodes.php' );

@@ -1,0 +1,19 @@
+.social-list {
+	&__item:not(:last-child) {
+		margin-right: 15px;
+	}
+}
+.social-icon {
+	display: block;
+	img,
+	svg {
+		display: block;
+		width: 24px;
+		height: 24px;
+	}
+	&:hover {
+		path {
+			fill: $color-white;
+		}
+	}
+}

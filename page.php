@@ -7,9 +7,9 @@ get_header();
 the_post();
 ?>
 	<main class="page-content">
+        <?php get_template_part('parts/hero/hero'); ?> 
         <div class="container">
-            <h1><?php the_title(); ?></h1>
-            <div class="page-entry"><?php
+            <div class="page-entry" style="color:white;"><?php
                 the_content();
             ?></div>
         </div>

@@ -9,6 +9,10 @@
 
 ?>
 <footer class="main-footer">
+ 
+    <?php get_template_part('parts/footer/footer-top'); ?> 
+
+    <?php get_template_part('parts/footer/footer-bottom'); ?> 
 
 </footer>
 </div> <!-- /#page -->

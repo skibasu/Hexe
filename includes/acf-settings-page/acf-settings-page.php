@@ -23,6 +23,18 @@ function register_acf_options_pages() {
 		'page_title' 	=> 'Footer',
 		'menu_title' 	=> 'Footer',
 		'parent_slug' 	=> $option_page['menu_slug'],
+    ));
+    
+     acf_add_options_sub_page(array(
+		'page_title' 	=> 'Brands',
+		'menu_title' 	=> 'Brands',
+		'parent_slug' 	=> $option_page['menu_slug'],
+    ));
+    
+       acf_add_options_sub_page(array(
+		'page_title' 	=> 'Pages',
+		'menu_title' 	=> 'Pages',
+		'parent_slug' 	=> $option_page['menu_slug'],
 	));
 }
 add_action('acf/init', 'register_acf_options_pages');

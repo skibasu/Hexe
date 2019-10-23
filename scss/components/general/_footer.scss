@@ -1,0 +1,103 @@
+footer {
+	a:hover {
+		color: $color-white;
+	}
+}
+.main-footer {
+	font-size: 12px;
+	color: $text-color-lighter;
+	background-color: $bgr-1;
+	@include mq(sm) {
+		@include font-size(12, 15);
+	}
+	@include mq(xl) {
+		font-size: 15px;
+	}
+
+	.page-logo {
+		width: 75px;
+		margin-bottom: 16px;
+		@include mq(md) {
+			width: 85px;
+		}
+	}
+	.custom-link {
+		font-family: $font-extrabold;
+	}
+	&__top-wrapper,
+	&__bottom-wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	&__top-wrapper {
+		padding: 40px 30px 42px;
+		@include mq(lg) {
+			display: flex;
+			justify-content: space-between;
+			padding: 90px 115px 53px;
+		}
+
+		p {
+			margin-bottom: 12px;
+		}
+	}
+	&__item {
+		flex: 0 0 auto;
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+	&__main-nav {
+		li:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
+	&__bottom {
+		background-color: $color-black;
+	}
+	&__bottom-wrapper {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		padding: 22px 30px 20px;
+		@include mq(lg) {
+			padding: 22px 115px 16px;
+		}
+	}
+	&__bottom-nav {
+		flex: 1 1 auto;
+		display: flex;
+		order: 3;
+		justify-content: flex-end;
+		@include mq(sm) {
+			justify-content: flex-start;
+			order: 1;
+		}
+	}
+	.social-list {
+		flex: 0 0 100%;
+		margin-bottom: 10px;
+		@include mq(sm) {
+			flex: 0 0 auto;
+			margin-bottom: 0;
+		}
+	}
+	.copyrights {
+		order: 2;
+		@include mq(sm) {
+			order: 1;
+		}
+	}
+	&__privacy-link {
+		padding-left: 15px;
+		@include mq(sm) {
+			padding: 0 36px 0 10px;
+			margin-left: auto;
+		}
+
+		@include mq(lg) {
+			padding: 0 42px 0 60px;
+		}
+	}
+}

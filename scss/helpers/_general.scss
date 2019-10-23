@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1230px;
 	margin: 0 auto;
 	padding: 0 30px;
 	// @include mq(lg) {
@@ -63,16 +63,34 @@ img {
 // Normalize links across browsers
 a {
 	text-decoration: none;
-
-	color: $link-color;
+	color: inherit;
+	outline: none;
 	img {
 		border: 0;
 	}
 }
-
+.page-logo {
+	&__link {
+		display: block;
+	}
+}
+.slogan {
+	display: block;
+}
 a:focus,
-a:hover {
+a:hover,
+a:active {
 	color: $link-hover-color;
+	color: inherit;
+	outline: none;
+}
+
+.mail-link {
+	color: $mail-color;
+	letter-spacing: 1px;
+	&:hover {
+		color: $color-3;
+	}
 }
 // Inputs
 textarea,
@@ -129,7 +147,8 @@ input {
 }
 
 // WP navigation menus are lists, but they don't need default list styling
-nav {
+nav,
+footer {
 	ul {
 		margin: 0;
 		padding: 0;
