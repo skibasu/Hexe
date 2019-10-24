@@ -9,12 +9,12 @@
 		padding-bottom: 80px;
 	}
 	h1 {
-		padding-top: 5px; //calc(5px + 111px);
+		padding-top: 10px; //calc(5px + 111px);
 		@include mq(md) {
-			padding-top: 5px; //calc(5px + 160px);
+			padding-top: 15px; //calc(5px + 160px);
 		}
 		@include mq(lg) {
-			padding-top: 66px; //calc(66px + 197px);
+			padding-top: 76px; //calc(66px + 197px);
 		}
 	}
 }

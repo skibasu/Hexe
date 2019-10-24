@@ -7,8 +7,9 @@ class MobileMenu {
 		this.liElem = $('.mobile-menu nav li');
 		this.hamburger = $('.hamburger');
 		this.closeBurger = $('.hamburger.closeBurger');
+		this.mq = window.matchMedia('(min-width:992px)');
 		this.tl = new TimelineMax({ paused: true })
-
+			.set(this.menu, { display: 'none' })
 			.set(this.menu, {
 				display: 'block',
 				opacity: 0
@@ -24,8 +25,10 @@ class MobileMenu {
 	}
 
 	init = () => {
-		const { hamburger, menuToggle } = this;
+		const { hamburger, menuToggle, mq, closeMenu } = this;
 		hamburger.on('click', menuToggle);
+		closeMenu();
+		mq.addListener(closeMenu);
 	};
 
 	menuToggle = () => {
@@ -38,6 +41,13 @@ class MobileMenu {
 			nav.scrollTop(0);
 			tl.play();
 			hamburger.addClass('closeBurger');
+		}
+	};
+	closeMenu = () => {
+		const { mq, menu, hamburger, tl } = this;
+		if (mq.matches) {
+			tl.reverse();
+			hamburger.removeClass('closeBurger');
 		}
 	};
 }

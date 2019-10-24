@@ -19,6 +19,7 @@ footer {
 		margin-bottom: 16px;
 		@include mq(md) {
 			width: 85px;
+			margin-bottom: 22px;
 		}
 	}
 	.custom-link {
@@ -30,11 +31,11 @@ footer {
 		margin: 0 auto;
 	}
 	&__top-wrapper {
-		padding: 40px 30px 42px;
+		padding: 40px 30px 43px;
 		@include mq(lg) {
 			display: flex;
 			justify-content: space-between;
-			padding: 90px 115px 53px;
+			padding: 90px 115px 50px;
 		}
 
 		p {
@@ -44,12 +45,15 @@ footer {
 	&__item {
 		flex: 0 0 auto;
 		&:not(:last-child) {
-			margin-bottom: 30px;
+			margin-bottom: 32px;
 		}
 	}
 	&__main-nav {
 		li:not(:last-child) {
-			margin-right: 15px;
+			margin-right: 12px;
+			@include mq(lg) {
+				margin-right: 16px;
+			}
 		}
 	}
 	&__bottom {
