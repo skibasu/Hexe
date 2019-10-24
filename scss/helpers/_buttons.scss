@@ -39,7 +39,7 @@
 }
 .hamburger {
 	width: 40px;
-	height: 32px;
+	height: 35px;
 	display: flex;
 	@include mq(lg) {
 		display: none;
@@ -59,6 +59,27 @@
 		background-color: $color-white;
 		&:not(:last-child) {
 			margin-bottom: 4px;
+		}
+	}
+	&.closeBurger {
+		transform: rotate(45deg);
+		.hamburger__item {
+			&:first-child,
+			&:last-child {
+				display: none;
+			}
+			&:nth-child(2),
+			&:nth-child(3) {
+				position: absolute;
+				left: 0;
+				top: 50%;
+			}
+			&:nth-child(2) {
+				transform: translateY(-50%);
+			}
+			&:nth-child(3) {
+				transform: translateY(-50%) rotate(90deg);
+			}
 		}
 	}
 }

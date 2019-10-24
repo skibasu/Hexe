@@ -1,14 +1,3 @@
-/**
- * --------------------------------------------------------------------------
- * Lock screen
- * Function locking screen scrolling, e.g for modals, menus or other
- * --------------------------------------------------------------------------
- */
-const $ = jQuery.noConflict();
-
-// --------------------------------------------------------------------------
-// Cache DOM
-
 const $html = $('html');
 const $body = $('body');
 let scrollTop;
@@ -22,16 +11,18 @@ const ScreenLock = {
 		const $window = $(window);
 		const windowHeight = window.innerHeight;
 		scrollTop = $window.scrollTop();
+		const overflow = $('html').prop('scrollHeight') > $(window).innerHeight() ? 'scroll' : '';
 
 		$html.css({
 			height: windowHeight,
-			overflow: 'hidden',
+			overflowY: overflow,
+			position: 'fixed'
 		});
 
 		$body.css({
 			height: `${windowHeight + scrollTop}px`,
 			overflow: 'hidden',
-			marginTop: `-${scrollTop}px`,
+			marginTop: `-${scrollTop}px`
 		});
 
 		this.isLocked = true;
@@ -41,13 +32,15 @@ const ScreenLock = {
 
 		$html.css({
 			height: '',
-			overflow: '',
+			overflowY: '',
+			position: ''
 		});
 
 		$body.css({
 			height: '',
-			overflow: '',
+			overflowY: '',
 			marginTop: '',
+			position: ''
 		});
 
 		$window.scrollTop(scrollTop);

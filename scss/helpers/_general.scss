@@ -72,11 +72,12 @@ a {
 .page-logo {
 	&__link {
 		display: block;
+		img {
+			display: block;
+		}
 	}
 }
-.slogan {
-	display: block;
-}
+
 a:focus,
 a:hover,
 a:active {
