@@ -36,10 +36,12 @@ class MobileMenu {
 
 		if (this.hamburger.hasClass('closeBurger')) {
 			tl.reverse();
+			screenLock.unlock();
 			hamburger.removeClass('closeBurger');
 		} else {
 			nav.scrollTop(0);
 			tl.play();
+			screenLock.lock();
 			hamburger.addClass('closeBurger');
 		}
 	};
@@ -47,6 +49,7 @@ class MobileMenu {
 		const { mq, menu, hamburger, tl } = this;
 		if (mq.matches) {
 			tl.reverse();
+			screenLock.unlock();
 			hamburger.removeClass('closeBurger');
 		}
 	};

@@ -19,7 +19,11 @@ h6 {
 }
 /* Text Elements */
 p {
+	line-height: 1.4;
 	margin: 0 0 20px;
+	@include mq(lg) {
+		line-height: 1.5;
+	}
 	&:last-child {
 		margin: 0;
 	}
@@ -35,9 +39,14 @@ h1 {
 	@include mq(sm) {
 		@include font-size(40, 80);
 	}
-	@include mq(xl) {
+	@include mq(xxl) {
 		font-size: 80px;
 		margin: 0 0 56px;
+	}
+	&.page-title {
+		@include mq(md) {
+			text-align: center;
+		}
 	}
 }
 
@@ -45,26 +54,31 @@ h2 {
 	font-size: 30px;
 	font-family: $font-extrabold;
 	font-weight: normal;
-	color: $color-3;
+
 	text-transform: uppercase;
 	@include mq(sm) {
 		@include font-size(30, 48);
 	}
-	@include mq(xl) {
+
+	@include mq(xxl) {
 		font-size: 48px;
 	}
 }
+
 h3 {
-	font-size: 20px;
+	font-size: 18px;
+
 	font-family: $font-extrabold;
 	font-weight: normal;
 	@include mq(sm) {
-		@include font-size(20, 24);
+		@include font-size(18, 24);
 	}
-	@include mq(xl) {
+
+	@include mq(xxl) {
 		font-size: 24px;
 	}
 }
+
 h4 {
 	font-size: 12px;
 	font-family: $font-extrabold;
@@ -75,7 +89,49 @@ h4 {
 	@include mq(sm) {
 		@include font-size(12, 15);
 	}
-	@include mq(xl) {
+	@include mq(xxl) {
 		font-size: 15px;
+	}
+}
+
+h5 {
+	font-family: $font-extrabold;
+	font-size: 18px;
+	margin-bottom: 4px;
+	@include mq(sm) {
+		@include font-size(18, 24);
+	}
+
+	@include mq(xxl) {
+		font-size: 24px;
+		margin-bottom: 8px;
+	}
+	letter-spacing: 0.02px;
+
+	text-transform: uppercase;
+}
+
+.lightbox-post__title {
+	font-size: 30px;
+	font-family: $font-extrabold;
+	font-weight: normal;
+	text-transform: uppercase;
+	@include mq(sm) {
+		@include font-size(30, 48);
+	}
+	@include mq(xxl) {
+		font-size: 48px;
+	}
+}
+.highlight-post__title {
+	font-size: 24px;
+	font-family: $font-extrabold;
+	font-weight: normal;
+	text-transform: uppercase;
+	@include mq(sm) {
+		@include font-size(24, 48);
+	}
+	@include mq(xxl) {
+		font-size: 48px;
 	}
 }

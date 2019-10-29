@@ -11,6 +11,11 @@ function activate_support() {
     add_image_size( 'page-logo', 260, 460 ); // Unlimited Height Mode
     add_image_size( 'social-icon', 24, 24, true );
     add_image_size( 'hero-panel', 680, 2000 );
+    add_image_size( 'hightlight-post', 470, 434 );
+    add_image_size( 'post-thumbnail', 470, 230);
+    add_image_size( 'brand-logo', 268, 120);
+    add_image_size( 'brand-thumbnail', 847, 1600);
+    add_image_size( 'founder-face', 140, 140 );
 }
 
 add_action('init', 'activate_support');

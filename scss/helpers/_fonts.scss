@@ -1,18 +1,19 @@
 @font-face {
-	font-family: 'proxima_novaextrabold';
-	src: url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.woff2') format('woff2'),
-		url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.woff') format('woff'),
-		url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.svg#proxima_novaextrabold')
-			format('svg');
+	font-family: 'proxima_novalight';
+	src: url('../fonts/fontsfree-net-proxima-nova-light-webfont.woff2') format('woff2'),
+		url('../fonts/fontsfree-net-proxima-nova-light-webfont.woff') format('woff'),
+		url('../fonts/fontsfree-net-proxima-nova-light-webfont.svg#proxima_novalight') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
-	font-family: 'proxima_novalight';
-	src: url('../fonts/fontsfree-net-proxima-nova-light-webfont.woff2') format('woff2'),
-		url('../fonts/fontsfree-net-proxima-nova-light-webfont.woff') format('woff'),
-		url('../fonts/fontsfree-net-proxima-nova-light-webfont.svg#proxima_novalight') format('svg');
+	font-family: 'proxima_novasemibold';
+	src: url('../fonts/fontsfree-net-proxima-nova-sbold-webfont.woff2') format('woff2'),
+		url('../fonts/fontsfree-net-proxima-nova-sbold-webfont.woff') format('woff'),
+		url('../fonts/fontsfree-net-proxima-nova-sbold-webfont.ttf') format('truetype'),
+		url('../fonts/fontsfree-net-proxima-nova-sbold-webfont.svg#proxima_novasemibold')
+			format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -26,8 +27,29 @@
 	font-style: normal;
 }
 
-$font-light: 'proxima_novalight', snas-serif;
+// @font-face {
+// 	font-family: 'proxima_novaextrabold';
+// 	src: url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.woff2') format('woff2'),
+// 		url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.woff') format('woff'),
+// 		url('../fonts/fontsfree-net-proxima-nova-xbold-webfont.svg#proxima_novaextrabold')
+// 			format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+@font-face {
+	font-family: 'proxima_novaextrabold';
+	src: url('../fonts/proximanova-extrabold-webfont.woff2') format('woff2'),
+		url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
+		url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
+		url('../fonts/proximanova-extrabold-webfont.svg#proxima_novaextrabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-light: 'proxima_novalight', sans-serif;
 $font-regular: 'proxima_novaregular', sans-serif;
+$font-semibold: 'proxima_novasemibold', sans-serif;
 $font-extrabold: 'proxima_novaextrabold', sans-serif;
 
 $font-base: $font-regular;

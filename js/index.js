@@ -1,5 +1,6 @@
 import Variables from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/variables.js';
 import MobileMenu from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/mobile-menu.js';
+import onToggleLightbox from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/on-toggle-lightbox.js';
 
 const variables = new Variables();
 const menu = new MobileMenu();
@@ -12,6 +13,7 @@ const menu = new MobileMenu();
 $(window).on('load', () => {
 	console.log('load');
 	menu.init();
+	onToggleLightbox();
 	variables.setMobileMenuHeight('.mobile-menu__nav');
 	variables.setHeroPadding('.hero');
 });

@@ -14,9 +14,9 @@ function my_scripts() {
     
     wp_enqueue_script( 'time-line', get_template_directory_uri() . '/js/vendors/GreenSock/TimelineMax.min.js', array(), '2.1.3', true );
 
-    
-
     wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/js/index.js', array('jquery'), '1.0', true );
+
+    wp_localize_script('theme-scripts', 'example_ajax_obj', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ));
 
 }
     

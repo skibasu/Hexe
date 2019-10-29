@@ -14,6 +14,7 @@ const ScreenLock = {
 		const overflow = $('html').prop('scrollHeight') > $(window).innerHeight() ? 'scroll' : '';
 
 		$html.css({
+			width: '100%',
 			height: windowHeight,
 			overflowY: overflow,
 			position: 'fixed'

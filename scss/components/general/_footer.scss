@@ -1,4 +1,7 @@
 footer {
+	a {
+		color: inherit;
+	}
 	a:hover {
 		color: $color-white;
 	}
@@ -40,6 +43,7 @@ footer {
 
 		p {
 			margin-bottom: 12px;
+			line-height: 1.2;
 		}
 	}
 	&__item {

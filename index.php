@@ -10,10 +10,17 @@
 get_header();
 ?>
 	<main class="page-content page-content--archive">
-        <div class="container">
-        
-       
-        </div>
+	<?php 
+	
+	get_template_part('parts/hero/hero'); 
+
+	if ( get_post_type() === 'post' ){
+
+	get_template_part('parts/archive/loop-post');  
+
+	}
+
+	?> 
 	</main>
 <?php
 get_footer();

@@ -1,15 +1,45 @@
 <?php
-/**
- * Loop for home page.
- *
- * @package    WordPress
- * @subpackage themeName
- * @since      themeName 1.0
- */
 
+$higligth_post = get_field('higligth_post', get_option('page_for_posts'));
+$h_post_id = $higligth_post[0];
+
+if (have_posts()) :
 ?>
 <section class="posts-content">
-	<?php while ( have_posts() ) : the_post(); ?>
-        <?php get_theme_part('archive/single-post'); ?>
-	<?php endwhile; ?>
+	<div class="container">
+		<div class="posts-content__wrapper">
+			
+			<?php 
+
+			if( !empty($higligth_post )) {
+
+				get_template_part('parts/archive/highlight-post');
+
+			}
+			?>
+			<div class="row row--variant-1">
+			<?php 
+			
+			while ( have_posts() ) {
+
+			the_post(); 
+
+				if( $h_post_id !== get_the_ID() ){
+
+					get_template_part('parts/archive/single-post');
+
+				}
+			} 
+			?>
+			</div>
+		</div>
+		<div class="posts-content__pagination">
+			<?php get_template_part('parts/archive/posts-pagination'); ?>
+		</div>
+	</div>	
+	<?php get_template_part('parts/archive/single-lightbox'); ?>
 </section>
+
+<?php
+endif; 
+?>

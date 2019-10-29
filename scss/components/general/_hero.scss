@@ -1,14 +1,19 @@
 .hero {
 	width: 100%;
-
-	padding-bottom: 40px;
+	color: $color-white;
+	padding-bottom: 47px;
+	background: {
+		size: cover;
+		repeat: no-repeat;
+		position: center center;
+	}
 	@include mq(md) {
-		padding-bottom: 60px;
+		padding-bottom: 52px;
 	}
 	@include mq(lg) {
-		padding-bottom: 80px;
+		padding-bottom: 58px;
 	}
-	h1 {
+	.page-title {
 		padding-top: 10px; //calc(5px + 111px);
 		@include mq(md) {
 			padding-top: 15px; //calc(5px + 160px);
