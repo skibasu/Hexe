@@ -35,6 +35,10 @@ $style = $hero ? " style='background-image:url($hero);'" : null;
         /* if is single brand */
         get_template_part('parts/hero/hero-brand');
     }
+    elseif (get_post_type() === 'brands' && !is_single() ) {
+        /*if is brands archive */
+        get_template_part('parts/hero/hero-brand-archive');
+    }
     elseif (is_category() && !is_single() && !is_home()) {
         /* if is category page */
         get_template_part('parts/hero/hero-category-page');

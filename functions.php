@@ -20,3 +20,9 @@ require_once( get_template_directory() . '/includes/load-post/load-post.php' );
 
 /* customize pagination */
 require_once( get_template_directory() . '/includes/custom-pagination/custom-pagination.php' );
+
+/* set unlimited post per page for brands */
+require_once( get_template_directory() . '/includes/preget-posts/preget-posts.php' );
+
+/* get template part width variables */
+require_once( get_template_directory() . '/includes/template-part-variable/jpr-get-template-part-with-vars.php' );

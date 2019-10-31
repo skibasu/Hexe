@@ -1,0 +1,91 @@
+.brand-archive {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 -30px;
+	padding-bottom: 100px;
+	@include mq(lg) {
+		margin: 0;
+		padding-bottom: 179px;
+	}
+
+	&__title {
+		padding-top: 10px;
+		margin-bottom: 46px;
+		@include mq(lg) {
+			padding-top: 40px;
+		}
+
+		@include mq(xl) {
+			padding-top: 76px;
+			margin-bottom: 92px;
+		}
+	}
+	&__row {
+		flex: 0 0 auto;
+		width: 100%;
+		@include mq(xl) {
+			width: 1023px;
+		}
+
+		justify-content: center;
+	}
+	&__column {
+		position: relative;
+		margin-bottom: 3px;
+		&:only-child {
+			margin-left: auto;
+			@include mq(lg) {
+				margin-left: 0;
+			}
+		}
+		&--1 {
+			order: 2;
+			transform: translate(-18px, 0);
+			@include mq(sm) {
+				transform: translate(-28px, 0);
+			}
+
+			@include mq(lg) {
+				order: unset;
+				transform: unset;
+			}
+		}
+		&--2 {
+			order: 1;
+			transform: translate(18px, calc(50% + 1.5px));
+			@include mq(sm) {
+				transform: translate(28px, calc(50% + 1.5px));
+			}
+			@include mq(lg) {
+				order: unset;
+				transform: unset;
+			}
+		}
+	}
+	.hexagon {
+		width: 159px;
+		height: 138px;
+		@include mq(sm) {
+			width: 239px;
+			height: 207px;
+		}
+
+		@include mq(lg) {
+			width: 300px;
+			height: 226px;
+		}
+
+		@include mq(xl) {
+			width: 341px;
+			height: 295px;
+		}
+
+		img {
+			max-width: 60%;
+		}
+		svg a:hover path {
+			fill-opacity: 0.25;
+		}
+	}
+}
