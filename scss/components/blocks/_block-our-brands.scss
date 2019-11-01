@@ -1,0 +1,157 @@
+.block-our-brands {
+	color: $color-white;
+	background-color: $color-7;
+	padding: 37px 0 74px;
+	@include mq(lg) {
+		padding: 108px 0 137px;
+	}
+
+	p {
+		font-size: 18px;
+	}
+	.container {
+		padding: 0 10px;
+		@include mq(lg) {
+			padding: 0 30px;
+		}
+	}
+	.row {
+		margin: 0 -15px;
+		min-height: 280px;
+	}
+	.col-inner-wrapper {
+		height: 100%;
+	}
+	&__title {
+		color: $color-1;
+		margin-bottom: 37px;
+		padding-left: 20px;
+		@include mq(lg) {
+			padding-left: 0;
+			margin-bottom: 55px;
+		}
+	}
+	&__logo {
+		max-width: 92px;
+		display: block;
+		margin-bottom: 20px;
+		@include mq(lg) {
+			margin-bottom: 18px;
+		}
+	}
+	&__brand {
+		padding: 0;
+		@include mq(lg) {
+			padding: 0 96px 0 0;
+		}
+
+		.block-our-brands__thumbnail {
+			transform: translateY(36px);
+			@include mq(md) {
+				transform: translateY(20%);
+			}
+			@include mq(lg) {
+				transform: translateY(-50%);
+				right: -88px;
+			}
+			@include mq(xxl) {
+				right: -188px;
+			}
+		}
+		&:nth-child(odd) {
+			padding: 0;
+			@include mq(lg) {
+				padding: 0 0 0 96px;
+			}
+
+			.block-our-brands__thumbnail {
+				transform: translateY(36px);
+				@include mq(md) {
+					transform: translateY(20%);
+				}
+				@include mq(lg) {
+					left: -88px;
+					right: unset;
+					transform: translateY(-50%);
+				}
+				@include mq(xxl) {
+					left: -188px;
+				}
+			}
+
+			.col:first-child {
+				@include mq(lg) {
+					order: 2;
+				}
+			}
+		}
+		&:not(:last-child) {
+			margin-bottom: 74px;
+			@include mq(md) {
+				margin-bottom: 100px;
+			}
+			@include mq(lg) {
+				margin-bottom: 70px;
+			}
+		}
+	}
+	&__brand-wrapper {
+		position: relative;
+		padding: 30px 15px 10px;
+		@include mq(sm) {
+			padding: 30px 35px 10px;
+		}
+
+		@include mq(lg) {
+			padding: 52px 100px 44px;
+		}
+	}
+	&__description {
+		font-size: 15px;
+		margin-bottom: 16px;
+		@include mq(sm) {
+			@include font-size(15, 18);
+		}
+		@include mq(lg) {
+			margin-bottom: 18px;
+		}
+		@include mq(xxl) {
+			font-size: 18px;
+		}
+		p {
+			font-size: inherit;
+		}
+	}
+	&__thumbnail {
+		margin: 0 auto;
+		@include mq(lg) {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-52%);
+		}
+
+		a {
+			display: block;
+			margin: 0 auto;
+			width: 80%;
+			@include mq(sm) {
+				width: 332px;
+			}
+			@include mq(md) {
+				width: 62%;
+			}
+			@include mq(lg) {
+				width: 390px;
+			}
+
+			@include mq(xxl) {
+				width: 520px;
+				margin: 0;
+			}
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

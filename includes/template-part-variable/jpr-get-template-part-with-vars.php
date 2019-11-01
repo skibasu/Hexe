@@ -9,6 +9,6 @@ Author: John Oleksowicz
 Author URI: http://jolekpress.com
 */
 require 'TemplateHelper.php';
-function jpr_get_template_part_with_vars($slug, $name = null, $variablesArray = []) {
+function get_theme_part($slug, $name = null, $variablesArray = []) {
     JPR\TemplatePartWithVars\Helper::getTemplatePartWithNamedVariables($slug, $name, $variablesArray);
 }

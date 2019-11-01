@@ -54,12 +54,14 @@ h2 {
 	font-size: 30px;
 	font-family: $font-extrabold;
 	font-weight: normal;
-
+	margin-bottom: 18px;
 	text-transform: uppercase;
 	@include mq(sm) {
 		@include font-size(30, 48);
 	}
-
+	@include mq(lg) {
+		margin-bottom: 28px;
+	}
 	@include mq(xxl) {
 		font-size: 48px;
 	}

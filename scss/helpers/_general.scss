@@ -173,3 +173,7 @@ footer {
 		color: inherit;
 	}
 }
+.slick-slide,
+.slick-slide * {
+	outline: none !important;
+}

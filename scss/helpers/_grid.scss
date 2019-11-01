@@ -40,7 +40,18 @@
 			max-width: 50%;
 		}
 	}
-
+	&-lg-65 {
+		@include mq(lg) {
+			flex: 0 0 65%;
+			max-width: 65%;
+		}
+	}
+	&-lg-35 {
+		@include mq(lg) {
+			flex: 0 0 35%;
+			max-width: 35%;
+		}
+	}
 	&-lg-12 {
 		@include mq(lg) {
 			flex: 0 0 100%;

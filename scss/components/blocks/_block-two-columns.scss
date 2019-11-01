@@ -1,0 +1,13 @@
+.block-two-columns {
+	padding: 56px 0 44px;
+	@include mq(lg) {
+		padding: 96px 0 65px;
+	}
+
+	&__title {
+		color: $color-1;
+	}
+	.row {
+		margin: 0 -15px;
+	}
+}

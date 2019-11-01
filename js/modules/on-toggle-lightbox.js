@@ -1,7 +1,7 @@
 import screenLock from 'http://localhost/hexe/wp-content/themes/hexe/js/constants/lock-screen.js';
 
-const onToggleLightbox = () => {
-	const wrapper = $('.posts-content');
+const onToggleLightbox = elem => {
+	const wrapper = $(elem);
 	const innerWrapper = $('.posts-content__lightbox-inner-wrapper');
 	const postDataWrapper = $('.post-data');
 	const lightbox = $('.posts-content__lightbox');

@@ -7,12 +7,15 @@ get_header();
 the_post();
 ?>
 	<main class="page-content">
-        <?php get_template_part('parts/hero/hero'); ?> 
-        <div class="container">
-            <div class="page-entry" style="color:white;"><?php
-                the_content();
-            ?></div>
-        </div>
+        <?php 
+        
+        get_template_part('parts/hero/hero'); 
+
+        get_template_part('parts/global/content'); 
+        
+        ?> 
+
+       <?php ContentBlock::display_theme_blocks(); ?>
 	</main>
 <?php
 get_footer();

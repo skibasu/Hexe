@@ -26,3 +26,6 @@ require_once( get_template_directory() . '/includes/preget-posts/preget-posts.ph
 
 /* get template part width variables */
 require_once( get_template_directory() . '/includes/template-part-variable/jpr-get-template-part-with-vars.php' );
+
+/* flexible content fields */
+require_once( get_template_directory() . '/includes/display-theme-block/display-theme-block.php' );

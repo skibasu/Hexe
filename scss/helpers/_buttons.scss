@@ -20,7 +20,19 @@
 	&--a {
 		background-color: $color-1;
 	}
+	&--brand,
+	&--b,
+	&--c,
+	&--d,
+	&--e {
+		padding: 12px 41px;
 
+		font-size: 12px;
+		@include mq(lg) {
+			font-size: 18px;
+			padding: 11px 31px;
+		}
+	}
 	&--b {
 		background-color: $color-2;
 	}

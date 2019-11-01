@@ -32,3 +32,13 @@
 		padding-bottom: 139px;
 	}
 }
+
+.page-slogan {
+	padding-top: 10px;
+	@include mq(lg) {
+		padding-top: 50px;
+	}
+	@include mq(xl) {
+		padding-top: 76px;
+	}
+}

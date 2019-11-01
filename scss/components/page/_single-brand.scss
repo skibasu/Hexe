@@ -28,6 +28,11 @@
 
 .single-brand {
 	&__content {
+		padding-bottom: 10px;
+		@include mq(lg) {
+			padding-bottom: 46px;
+		}
+
 		background: {
 			image: url('../images/backgrounds/atom-bgr.png');
 			size: contain;
@@ -50,9 +55,9 @@
 			align-items: stretch;
 			margin: 0 -15px;
 			&--content {
-				margin: 0 -15px 30px;
+				margin: 0 -15px 39px;
 				@include mq(lg) {
-					margin: 0 -15px 46px;
+					margin: 0 -15px 69px;
 				}
 			}
 		}
@@ -127,7 +132,7 @@
 
 		img {
 			margin: 0 auto;
-			max-width: 76%;
+			max-width: 72%;
 			@include mq(lg) {
 				max-width: 100%;
 			}
@@ -137,7 +142,7 @@
 		background-color: $color-white;
 		padding: 72px 0 50px;
 		@include mq(lg) {
-			padding: 186px 0 50px;
+			padding: 168px 0 50px;
 		}
 
 		.row {

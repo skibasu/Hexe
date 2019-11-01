@@ -176,6 +176,11 @@ nav a,
 footer a {
   color: inherit; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_general\.scss}line{font-family:\00003176}}
+.slick-slide,
+.slick-slide * {
+  outline: none !important; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_helper-classes\.scss}line{font-family:\000031}}
 .block {
   display: block; }
@@ -364,48 +369,53 @@ h2 {
   font-size: 30px;
   font-family: "proxima_novaextrabold", sans-serif;
   font-weight: normal;
+  margin-bottom: 18px;
   text-transform: uppercase; }
   @media all and (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000353}}
     h2 {
       font-size: calc(30 * 1px + (48 - 30) * ((100vw - 480px) / (1430 - 480))); } }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000353}}
+    h2 {
+      margin-bottom: 28px; } }
   @media all and (min-width: 1430px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000353}}
     h2 {
       font-size: 48px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000370}}
 h3 {
   font-size: 18px;
   font-family: "proxima_novaextrabold", sans-serif;
   font-weight: normal; }
   @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000370}}
     h3 {
       font-size: calc(18 * 1px + (24 - 18) * ((100vw - 480px) / (1430 - 480))); } }
   @media all and (min-width: 1430px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000368}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000370}}
     h3 {
       font-size: 24px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000384}}
 h4 {
   font-size: 12px;
   font-family: "proxima_novaextrabold", sans-serif;
   font-weight: normal; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000388}}
   h4:not(:last-child) {
     margin-bottom: 10px; }
   @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000384}}
     h4 {
       font-size: calc(12 * 1px + (15 - 12) * ((100vw - 480px) / (1430 - 480))); } }
   @media all and (min-width: 1430px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000384}}
     h4 {
       font-size: 15px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000399}}
 h5 {
   font-family: "proxima_novaextrabold", sans-serif;
   font-size: 18px;
@@ -413,42 +423,42 @@ h5 {
   letter-spacing: 0.02px;
   text-transform: uppercase; }
   @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000399}}
     h5 {
       font-size: calc(18 * 1px + (24 - 18) * ((100vw - 480px) / (1430 - 480))); } }
   @media all and (min-width: 1430px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\0000399}}
     h5 {
       font-size: 24px;
       margin-bottom: 8px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003116}}
 .lightbox-post__title {
   font-size: 30px;
   font-family: "proxima_novaextrabold", sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
   @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003116}}
     .lightbox-post__title {
       font-size: calc(30 * 1px + (48 - 30) * ((100vw - 480px) / (1430 - 480))); } }
   @media all and (min-width: 1430px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003116}}
     .lightbox-post__title {
       font-size: 48px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003128}}
 .highlight-post__title {
   font-size: 24px;
   font-family: "proxima_novaextrabold", sans-serif;
   font-weight: normal;
   text-transform: uppercase; }
   @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003128}}
     .highlight-post__title {
       font-size: calc(24 * 1px + (48 - 24) * ((100vw - 480px) / (1430 - 480))); } }
   @media all and (min-width: 1430px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_typography\.scss}line{font-family:\00003128}}
     .highlight-post__title {
       font-size: 48px; } }
 
@@ -476,24 +486,33 @@ h5 {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000320}}
   .btn--a {
     background-color: #1e90c3; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000323}}
+  .btn--brand, .btn--b, .btn--c, .btn--d, .btn--e {
+    padding: 12px 41px;
+    font-size: 12px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000323}}
+      .btn--brand, .btn--b, .btn--c, .btn--d, .btn--e {
+        font-size: 18px;
+        padding: 11px 31px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000336}}
   .btn--b {
     background-color: #013363; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000340}}
   .btn--c {
     background-color: #01db99; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000344}}
   .btn--d {
     background-color: #5dbcd2; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000348}}
   .btn--e {
     background-color: #ebca97; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000352}}
 .btn-read-more {
   font-family: "proxima_novaextrabold", sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000355}}
 .hamburger {
   width: 40px;
   height: 36px;
@@ -501,38 +520,38 @@ h5 {
   justify-content: center;
   align-items: center; }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000343}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000355}}
     .hamburger {
       display: none; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000365}}
   .hamburger__wrapper {
     width: 32px;
     height: 24px;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000370}}
   .hamburger__item {
     width: 32px;
     height: 3px;
     display: block;
     background-color: #ffffff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000375}}
     .hamburger__item:not(:last-child) {
       margin-bottom: 4px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000379}}
   .hamburger.closeBurger {
     transform: rotate(45deg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000382}}
     .hamburger.closeBurger .hamburger__item:first-child, .hamburger.closeBurger .hamburger__item:last-child {
       display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000386}}
     .hamburger.closeBurger .hamburger__item:nth-child(2), .hamburger.closeBurger .hamburger__item:nth-child(3) {
       position: absolute;
       left: 0;
       top: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000392}}
     .hamburger.closeBurger .hamburger__item:nth-child(2) {
       transform: translateY(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000395}}
     .hamburger.closeBurger .hamburger__item:nth-child(3) {
       transform: translateY(-50%) rotate(90deg); }
 
@@ -579,17 +598,27 @@ h5 {
       flex: 0 0 50%;
       max-width: 50%; } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000343}}
+    .col-lg-65 {
+      flex: 0 0 65%;
+      max-width: 65%; } }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000349}}
+    .col-lg-35 {
+      flex: 0 0 35%;
+      max-width: 35%; } }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000355}}
     .col-lg-12 {
       flex: 0 0 100%;
       max-width: 100%; } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000361}}
     .col-lg-6 {
       flex: 0 0 calc(6 / 12 * 100%);
       max-width: calc(6 / 12 * 100%); } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000367}}
     .col-lg-4 {
       flex: 0 0 calc(4 / 12 * 100%);
       max-width: calc(4 / 12 * 100%); } }
@@ -743,6 +772,18 @@ h5 {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/general\/_hero\.scss}line{font-family:\0000326}}
     .home .hero {
       padding-bottom: 139px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/general\/_hero\.scss}line{font-family:\0000336}}
+.page-slogan {
+  padding-top: 10px; }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/general\/_hero\.scss}line{font-family:\0000336}}
+    .page-slogan {
+      padding-top: 50px; } }
+  @media all and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/general\/_hero\.scss}line{font-family:\0000336}}
+    .page-slogan {
+      padding-top: 76px; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/general\/_social-list\.scss}line{font-family:\000032}}
 .social-list__item:not(:last-child) {
@@ -1226,135 +1267,140 @@ footer a:hover {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000330}}
 .single-brand__content {
+  padding-bottom: 10px;
   background-image: url("../images/backgrounds/atom-bgr.png");
   background-size: contain;
   background-position: bottom right;
   background-repeat: no-repeat;
   background-color: #f7f7f7; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000338}}
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000330}}
+    .single-brand__content {
+      padding-bottom: 46px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000343}}
   .single-brand__content .container {
     padding: 0 10px; }
     @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000338}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000343}}
       .single-brand__content .container {
         padding: 0 30px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000349}}
   .single-brand__content .row {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: stretch;
     margin: 0 -15px; }
     @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000349}}
       .single-brand__content .row {
         flex-direction: row; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000357}}
     .single-brand__content .row--content {
-      margin: 0 -15px 30px; }
+      margin: 0 -15px 39px; }
       @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000357}}
         .single-brand__content .row--content {
-          margin: 0 -15px 46px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000360}}
+          margin: 0 -15px 69px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000365}}
 .single-brand__content-column {
   letter-spacing: 0.02px;
   font-size: 15px;
   width: 100%;
   padding: 0 15px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000370}}
   .single-brand__content-column:first-child {
     margin-top: -137px;
     margin-bottom: -2px; }
     @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000370}}
       .single-brand__content-column:first-child {
         margin-top: -134px;
         margin-bottom: 0;
         flex-grow: 1; } }
   @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000365}}
     .single-brand__content-column {
       font-size: calc(15 * 1px + (18 - 15) * ((100vw - 480px) / (1430 - 480))); } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000365}}
     .single-brand__content-column {
       margin-top: -134px;
       flex-grow: 1; } }
   @media all and (min-width: 1430px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000365}}
     .single-brand__content-column {
       font-size: 18px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000391}}
   .single-brand__content-column * {
     width: 100%;
     font-size: inherit; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000396}}
   .single-brand__content-column:first-child .single-brand__content-column-inner-wrapper {
     padding-top: 33px; }
     @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000391}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000396}}
       .single-brand__content-column:first-child .single-brand__content-column-inner-wrapper {
         padding: 30px 40px 74px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003104}}
   .single-brand__content-column:last-child .single-brand__content-column-inner-wrapper {
     padding-bottom: 40px; }
     @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\0000399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003104}}
       .single-brand__content-column:last-child .single-brand__content-column-inner-wrapper {
         padding: 30px 40px 74px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003113}}
 .single-brand__content-column-inner-wrapper {
   padding: 0 15px 5px;
   background-color: #ffffff;
   height: 100%; }
   @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003113}}
     .single-brand__content-column-inner-wrapper {
       padding: 0 40px 5px; } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003113}}
     .single-brand__content-column-inner-wrapper {
       padding: 30px 40px 74px;
       box-shadow: 0 0 25px rgba(6, 28, 49, 0.05); } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003126}}
 .single-brand__thumbnail {
   display: block;
   margin: 0 0 -33px; }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003126}}
     .single-brand__thumbnail {
       margin: 0 0 -130px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003133}}
   .single-brand__thumbnail img {
     margin: 0 auto;
-    max-width: 76%; }
+    max-width: 72%; }
     @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003133}}
       .single-brand__thumbnail img {
         max-width: 100%; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003141}}
 .single-brand__founders {
   background-color: #ffffff;
   padding: 72px 0 50px; }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003136}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003141}}
     .single-brand__founders {
-      padding: 186px 0 50px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003143}}
+      padding: 168px 0 50px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003148}}
   .single-brand__founders .row {
     justify-content: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003152}}
 .single-brand__founders-column {
   text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003155}}
   .single-brand__founders-column:not(:last-child) .single-brand__founders-column-inner-wrapper {
     padding-bottom: 62px; }
     @media all and (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003155}}
       .single-brand__founders-column:not(:last-child) .single-brand__founders-column-inner-wrapper {
         padding-bottom: 40px; } }
 @media all and (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_single-brand\.scss}line{font-family:\00003163}}
   .single-brand__founders-column-inner-wrapper {
     padding-bottom: 40px; } }
 
@@ -1454,3 +1500,232 @@ footer a:hover {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/page\/_brand-archive\.scss}line{font-family:\0000387}}
     .brand-archive .hexagon svg a:hover path {
       fill-opacity: 0.25; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-two-columns\.scss}line{font-family:\000031}}
+.block-two-columns {
+  padding: 56px 0 44px; }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-two-columns\.scss}line{font-family:\000031}}
+    .block-two-columns {
+      padding: 96px 0 65px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-two-columns\.scss}line{font-family:\000037}}
+  .block-two-columns__title {
+    color: #1e90c3; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-two-columns\.scss}line{font-family:\0000310}}
+  .block-two-columns .row {
+    margin: 0 -15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\000031}}
+.block-our-brands {
+  color: #ffffff;
+  background-color: #061c31;
+  padding: 37px 0 74px; }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\000031}}
+    .block-our-brands {
+      padding: 108px 0 137px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\000039}}
+  .block-our-brands p {
+    font-size: 18px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000312}}
+  .block-our-brands .container {
+    padding: 0 10px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000312}}
+      .block-our-brands .container {
+        padding: 0 30px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000318}}
+  .block-our-brands .row {
+    margin: 0 -15px;
+    min-height: 280px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000322}}
+  .block-our-brands .col-inner-wrapper {
+    height: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000325}}
+  .block-our-brands__title {
+    color: #1e90c3;
+    margin-bottom: 37px;
+    padding-left: 20px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000325}}
+      .block-our-brands__title {
+        padding-left: 0;
+        margin-bottom: 55px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000334}}
+  .block-our-brands__logo {
+    max-width: 92px;
+    display: block;
+    margin-bottom: 20px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000334}}
+      .block-our-brands__logo {
+        margin-bottom: 18px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000342}}
+  .block-our-brands__brand {
+    padding: 0; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000342}}
+      .block-our-brands__brand {
+        padding: 0 96px 0 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000348}}
+    .block-our-brands__brand .block-our-brands__thumbnail {
+      transform: translateY(36px); }
+      @media all and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000348}}
+        .block-our-brands__brand .block-our-brands__thumbnail {
+          transform: translateY(20%); } }
+      @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000348}}
+        .block-our-brands__brand .block-our-brands__thumbnail {
+          transform: translateY(-50%);
+          right: -88px; } }
+      @media all and (min-width: 1430px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000348}}
+        .block-our-brands__brand .block-our-brands__thumbnail {
+          right: -188px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000361}}
+    .block-our-brands__brand:nth-child(odd) {
+      padding: 0; }
+      @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000361}}
+        .block-our-brands__brand:nth-child(odd) {
+          padding: 0 0 0 96px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000367}}
+      .block-our-brands__brand:nth-child(odd) .block-our-brands__thumbnail {
+        transform: translateY(36px); }
+        @media all and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000367}}
+          .block-our-brands__brand:nth-child(odd) .block-our-brands__thumbnail {
+            transform: translateY(20%); } }
+        @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000367}}
+          .block-our-brands__brand:nth-child(odd) .block-our-brands__thumbnail {
+            left: -88px;
+            right: unset;
+            transform: translateY(-50%); } }
+        @media all and (min-width: 1430px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000367}}
+          .block-our-brands__brand:nth-child(odd) .block-our-brands__thumbnail {
+            left: -188px; } }
+      @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000382}}
+        .block-our-brands__brand:nth-child(odd) .col:first-child {
+          order: 2; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000388}}
+    .block-our-brands__brand:not(:last-child) {
+      margin-bottom: 74px; }
+      @media all and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000388}}
+        .block-our-brands__brand:not(:last-child) {
+          margin-bottom: 100px; } }
+      @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000388}}
+        .block-our-brands__brand:not(:last-child) {
+          margin-bottom: 70px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000398}}
+  .block-our-brands__brand-wrapper {
+    position: relative;
+    padding: 30px 15px 10px; }
+    @media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000398}}
+      .block-our-brands__brand-wrapper {
+        padding: 30px 35px 10px; } }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\0000398}}
+      .block-our-brands__brand-wrapper {
+        padding: 52px 100px 44px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003109}}
+  .block-our-brands__description {
+    font-size: 15px;
+    margin-bottom: 16px; }
+    @media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003109}}
+      .block-our-brands__description {
+        font-size: calc(15 * 1px + (18 - 15) * ((100vw - 480px) / (1430 - 480))); } }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003109}}
+      .block-our-brands__description {
+        margin-bottom: 18px; } }
+    @media all and (min-width: 1430px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003109}}
+      .block-our-brands__description {
+        font-size: 18px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003121}}
+    .block-our-brands__description p {
+      font-size: inherit; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003125}}
+  .block-our-brands__thumbnail {
+    margin: 0 auto; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003125}}
+      .block-our-brands__thumbnail {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-52%); } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003133}}
+    .block-our-brands__thumbnail a {
+      display: block;
+      margin: 0 auto;
+      width: 80%; }
+      @media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003133}}
+        .block-our-brands__thumbnail a {
+          width: 332px; } }
+      @media all and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003133}}
+        .block-our-brands__thumbnail a {
+          width: 62%; } }
+      @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003133}}
+        .block-our-brands__thumbnail a {
+          width: 390px; } }
+      @media all and (min-width: 1430px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003133}}
+        .block-our-brands__thumbnail a {
+          width: 520px;
+          margin: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-brands\.scss}line{font-family:\00003152}}
+    .block-our-brands__thumbnail img {
+      width: 100%;
+      height: auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\000031}}
+.block-latest-news {
+  padding: 40px 0 28px; }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\000031}}
+    .block-latest-news {
+      padding: 100px 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\000037}}
+  .block-latest-news .row {
+    margin: 0 -15px;
+    display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000311}}
+  .block-latest-news__title {
+    color: #1e90c3;
+    margin-bottom: 38px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000315}}
+  .block-latest-news .slick-track {
+    display: flex !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000319}}
+  .block-latest-news .slick-slide {
+    height: inherit !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000322}}
+  .block-latest-news__slick-slider__item {
+    padding: 0 15px;
+    height: 100%;
+    background-color: #ffffff; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000322}}
+      .block-latest-news__slick-slider__item {
+        background-color: transparent; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000330}}
+  .block-latest-news .col-inner-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 34px;
+    background-color: #ffffff; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000330}}
+      .block-latest-news .col-inner-wrapper {
+        padding: 0 50px; } }

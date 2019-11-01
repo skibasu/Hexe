@@ -35,14 +35,14 @@ if ( ! empty( $categories ) ) {
 
             <?php
 
-            if ( !empty(get_the_content() ) ):
+            if ( !empty(get_the_content($id) ) ):
 
-                if ( has_excerpt() ) :
+                if ( has_excerpt($id) ) :
 
             ?>
 
             <div class="single-post__content">
-                <?php the_excerpt(); ?>
+                <?php the_excerpt($id); ?>
             </div>
 
             <?php

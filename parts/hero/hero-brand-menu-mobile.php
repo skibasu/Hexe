@@ -22,7 +22,7 @@ $k=1;
             <div class="brand-archive__column__inner-wrapper">
                 <div class="hexagon">
                     <div class="hexagon__border">
-                        <?php jpr_get_template_part_with_vars('parts/brands/hexagon',null, ['id'=> $i, 'link_href' => get_the_permalink($id)]) ?>
+                        <?php get_theme_part('parts/brands/hexagon',null, ['id'=> $i, 'link_href' => get_the_permalink($id)]) ?>
                     </div>
                     <?php echo  $logo ; ?>
                 </div>
