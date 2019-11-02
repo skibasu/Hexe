@@ -5,8 +5,10 @@ class ContentBlock {
 		'block_two_columns'			=> 'parts/blocks/block-two-columns',
 		'block_our_brands'			=> 'parts/blocks/block-our-brands',
 		'block_latest_news'			=> 'parts/blocks/block-latest-posts',
-		'block_map          '		=> 'parts/blocks/block-map',
-		'block_featured_post'		=> 'parts/blocks/block-featured-post',
+		'block_map'		            => 'parts/blocks/block-map',
+        'block_our_values'		    => 'parts/blocks/block-our-values',
+        'block_our_founders'        => 'parts/blocks/block-our-founders',
+        'block_career_job'          => 'parts/blocks/block-career'
 
     );
 

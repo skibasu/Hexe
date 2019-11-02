@@ -289,16 +289,22 @@ footer a {
         height: 140px; } }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_helper-classes\.scss}line{font-family:\00003105}}
-.founder-description {
+.block-career__city,
+.founder-description,
+.founder-bio {
   font-size: 15px;
   line-height: 1.4; }
   @media all and (min-width: 480px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_helper-classes\.scss}line{font-family:\00003105}}
-    .founder-description {
+    .block-career__city,
+    .founder-description,
+    .founder-bio {
       font-size: calc(15 * 1px + (18 - 15) * ((100vw - 480px) / (1430 - 480))); } }
   @media all and (min-width: 1430px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_helper-classes\.scss}line{font-family:\00003105}}
-    .founder-description {
+    .block-career__city,
+    .founder-description,
+    .founder-bio {
       font-size: 18px; } }
 
 /* Headings */
@@ -487,32 +493,40 @@ h5 {
   .btn--a {
     background-color: #1e90c3; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000323}}
-  .btn--brand, .btn--b, .btn--c, .btn--d, .btn--e {
-    padding: 12px 41px;
-    font-size: 12px; }
+  .btn--brand, .btn--b, .btn--c, .btn--d, .btn--e, .btn--f {
+    padding: 12px 41px; }
     @media all and (min-width: 992px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000323}}
-      .btn--brand, .btn--b, .btn--c, .btn--d, .btn--e {
+      .btn--brand, .btn--b, .btn--c, .btn--d, .btn--e, .btn--f {
         font-size: 18px;
         padding: 11px 31px; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000335}}
   .btn--b {
     background-color: #013363; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000339}}
   .btn--c {
     background-color: #01db99; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000343}}
   .btn--d {
     background-color: #5dbcd2; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000347}}
   .btn--e {
     background-color: #ebca97; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000350}}
+  .btn--f {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 11px 37px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000350}}
+      .btn--f {
+        padding: 10px 23px; } }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000359}}
 .btn-read-more {
   font-family: "proxima_novaextrabold", sans-serif; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000362}}
 .hamburger {
   width: 40px;
   height: 36px;
@@ -520,38 +534,38 @@ h5 {
   justify-content: center;
   align-items: center; }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000362}}
     .hamburger {
       display: none; } }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000372}}
   .hamburger__wrapper {
     width: 32px;
     height: 24px;
     position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000377}}
   .hamburger__item {
     width: 32px;
     height: 3px;
     display: block;
     background-color: #ffffff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000382}}
     .hamburger__item:not(:last-child) {
       margin-bottom: 4px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000386}}
   .hamburger.closeBurger {
     transform: rotate(45deg); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000389}}
     .hamburger.closeBurger .hamburger__item:first-child, .hamburger.closeBurger .hamburger__item:last-child {
       display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000393}}
     .hamburger.closeBurger .hamburger__item:nth-child(2), .hamburger.closeBurger .hamburger__item:nth-child(3) {
       position: absolute;
       left: 0;
       top: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000399}}
     .hamburger.closeBurger .hamburger__item:nth-child(2) {
       transform: translateY(-50%); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_buttons\.scss}line{font-family:\00003102}}
     .hamburger.closeBurger .hamburger__item:nth-child(3) {
       transform: translateY(-50%) rotate(90deg); }
 
@@ -599,26 +613,36 @@ h5 {
       max-width: 50%; } }
   @media all and (min-width: 992px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000343}}
+    .col-lg-40 {
+      flex: 0 0 40%;
+      max-width: 40%; } }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000349}}
+    .col-lg-60 {
+      flex: 0 0 60%;
+      max-width: 60%; } }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000356}}
     .col-lg-65 {
       flex: 0 0 65%;
       max-width: 65%; } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000349}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000362}}
     .col-lg-35 {
       flex: 0 0 35%;
       max-width: 35%; } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000368}}
     .col-lg-12 {
       flex: 0 0 100%;
       max-width: 100%; } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000361}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000374}}
     .col-lg-6 {
       flex: 0 0 calc(6 / 12 * 100%);
       max-width: calc(6 / 12 * 100%); } }
   @media all and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000367}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/helpers\/_grid\.scss}line{font-family:\0000380}}
     .col-lg-4 {
       flex: 0 0 calc(4 / 12 * 100%);
       max-width: calc(4 / 12 * 100%); } }
@@ -1729,3 +1753,220 @@ footer a:hover {
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-latest-posts\.scss}line{font-family:\0000330}}
       .block-latest-news .col-inner-wrapper {
         padding: 0 50px; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\000031}}
+.block-our-values {
+  background-image: url(../images/backgrounds/atom-bgr.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  @media all and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\000031}}
+    .block-our-values {
+      background-image: url(../images/backgrounds/atom-bgr.png);
+      background-size: contain;
+      background-position: bottom right;
+      background-repeat: no-repeat; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000316}}
+  .block-our-values .block-two-columns {
+    padding: 43px 0 40px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000316}}
+      .block-our-values .block-two-columns {
+        padding: 90px 0 105px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000323}}
+  .block-our-values .hexagon {
+    margin: 0 auto;
+    flex-direction: column;
+    width: 280px;
+    height: 211px; }
+    @media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000323}}
+      .block-our-values .hexagon {
+        width: 379px;
+        height: 286px; } }
+    @media all and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000323}}
+      .block-our-values .hexagon {
+        width: 383px;
+        height: 332px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000338}}
+    .block-our-values .hexagon path {
+      fill-opacity: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000341}}
+    .block-our-values .hexagon p {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      font-family: "proxima_novalight", sans-serif;
+      max-width: 56%;
+      font-size: 13px; }
+      @media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000341}}
+        .block-our-values .hexagon p {
+          font-size: 18px; } }
+      @media all and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000341}}
+        .block-our-values .hexagon p {
+          max-width: 70%; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000357}}
+  .block-our-values__values {
+    display: block;
+    padding-bottom: 60px; }
+    @media all and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000357}}
+      .block-our-values__values {
+        padding-bottom: 270px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000364}}
+  .block-our-values__title {
+    color: #1e90c3; }
+    @media all and (min-width: 1430px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000364}}
+      .block-our-values__title {
+        margin-bottom: -56px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000370}}
+  .block-our-values__row {
+    display: block; }
+    @media all and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000370}}
+      .block-our-values__row {
+        display: flex;
+        width: 1170px; } }
+  @media all and (max-width: 1199px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000377}}
+    .block-our-values__column {
+      transform: none !important; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000382}}
+  .block-our-values__name, .block-our-values__description {
+    position: relative;
+    z-index: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-values\.scss}line{font-family:\0000387}}
+  .block-our-values__name {
+    margin-bottom: 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\000031}}
+.block-our-founders {
+  padding: 45px 0 0; }
+  @media all and (min-width: 1200px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\000031}}
+    .block-our-founders {
+      padding: 100px 0 0; } }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\000037}}
+    .block-our-founders .order-last {
+      order: 2; } }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000312}}
+    .block-our-founders .order-first {
+      order: 1;
+      padding-left: 68px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000318}}
+  .block-our-founders__title {
+    color: #1e90c3; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000318}}
+      .block-our-founders__title {
+        margin-bottom: 40px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000324}}
+  .block-our-founders__block {
+    margin: 0 -20px 27px;
+    padding: 37px 10px; }
+    @media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000324}}
+      .block-our-founders__block {
+        padding: 37px 24px; } }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000324}}
+      .block-our-founders__block {
+        padding: 45px 0 56px;
+        margin: 0 0 50px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000337}}
+  .block-our-founders__elem:not(:only-child) {
+    margin-bottom: 80px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000340}}
+  .block-our-founders__elem:last-child {
+    margin-bottom: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000346}}
+  .block-our-founders .col-lg-40 {
+    text-align: center; }
+    @media all and (max-width: 991px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000346}}
+      .block-our-founders .col-lg-40 {
+        order: 2; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000354}}
+  .block-our-founders .founder-face {
+    margin-bottom: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000356}}
+    .block-our-founders .founder-face img {
+      width: 90px;
+      height: 90px; }
+      @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000356}}
+        .block-our-founders .founder-face img {
+          width: 120px;
+          height: 120px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000365}}
+  .block-our-founders .founder-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000369}}
+    .block-our-founders .founder-bio p {
+      margin-bottom: 30px; }
+      @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-our-founders\.scss}line{font-family:\0000369}}
+        .block-our-founders .founder-bio p {
+          margin-bottom: 0;
+          max-width: 90%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\000031}}
+.block-career {
+  padding: 40px 0 50px;
+  background-color: #061c31;
+  color: #ffffff; }
+  @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\000031}}
+    .block-career {
+      padding: 100px 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\000039}}
+  .block-career__title {
+    color: #1e90c3;
+    margin-bottom: 34px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\000039}}
+      .block-career__title {
+        margin-bottom: 52px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000316}}
+  .block-career__job-title {
+    margin-bottom: 19px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000316}}
+      .block-career__job-title {
+        margin-bottom: 10px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000322}}
+  .block-career__city {
+    margin-bottom: 33px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000322}}
+      .block-career__city {
+        margin: 0 0 20px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000328}}
+  .block-career .row {
+    margin: 0 -15px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000331}}
+  .block-career .col:first-child {
+    margin-bottom: 47px; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000331}}
+      .block-career .col:first-child {
+        margin-bottom: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000338}}
+  .block-career .col:last-child .col-inner-wrapper {
+    margin: 0 -20px;
+    padding: 36px 37px 38px;
+    background-color: #1e90c3; }
+    @media all and (min-width: 992px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/xampp\/htdocs\/hexe\/wp-content\/themes\/hexe\/scss\/components\/blocks\/_block-career\.scss}line{font-family:\0000338}}
+      .block-career .col:last-child .col-inner-wrapper {
+        margin: 0;
+        padding: 50px; } }

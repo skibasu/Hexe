@@ -26,9 +26,14 @@ $style = $hero ? " style='background-image:url($hero);'" : null;
          /* if is front page  */
          get_template_part('parts/hero/hero-front-page');
 
-    }elseif (is_home()) {
+    }elseif (is_home() ) {
         /* if is home page - blog page - archive page  */
         get_template_part('parts/hero/hero-home-page');
+
+    }
+    elseif (is_page()) {
+         /* if is page */
+        get_template_part('parts/hero/hero-page');
 
     }
     elseif ( get_post_type() === 'brands' && is_single() ) {

@@ -1,0 +1,49 @@
+.block-career {
+	padding: 40px 0 50px;
+	@include mq(lg) {
+		padding: 100px 0;
+	}
+
+	background-color: $color-7;
+	color: $color-white;
+	&__title {
+		color: $color-1;
+		margin-bottom: 34px;
+		@include mq(lg) {
+			margin-bottom: 52px;
+		}
+	}
+	&__job-title {
+		margin-bottom: 19px;
+		@include mq(lg) {
+			margin-bottom: 10px;
+		}
+	}
+	&__city {
+		margin-bottom: 33px;
+		@include mq(lg) {
+			margin: 0 0 20px;
+		}
+	}
+	.row {
+		margin: 0 -15px;
+	}
+	.col:first-child {
+		margin-bottom: 47px;
+		@include mq(lg) {
+			margin-bottom: 0;
+		}
+	}
+	.col:last-child {
+		.col-inner-wrapper {
+			margin: 0 -20px;
+			padding: 36px 37px 38px;
+			@include mq(lg) {
+				margin: 0;
+				padding: 50px;
+			}
+
+			background-color: $color-1;
+		}
+	}
+}

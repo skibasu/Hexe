@@ -24,10 +24,9 @@
 	&--b,
 	&--c,
 	&--d,
-	&--e {
+	&--e,
+	&--f {
 		padding: 12px 41px;
-
-		font-size: 12px;
 		@include mq(lg) {
 			font-size: 18px;
 			padding: 11px 31px;
@@ -47,6 +46,14 @@
 
 	&--e {
 		background-color: $color-5;
+	}
+	&--f {
+		color: $color-black;
+		background-color: $color-white;
+		padding: 11px 37px;
+		@include mq(lg) {
+			padding: 10px 23px;
+		}
 	}
 }
 .btn-read-more {

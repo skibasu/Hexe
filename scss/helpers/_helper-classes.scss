@@ -102,7 +102,9 @@
 		}
 	}
 }
-.founder-description {
+.block-career__city,
+.founder-description,
+.founder-bio {
 	font-size: 15px;
 	line-height: 1.4;
 	@include mq(sm) {

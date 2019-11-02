@@ -1,0 +1,77 @@
+.block-our-founders {
+	padding: 45px 0 0;
+	@include mq(xl) {
+		padding: 100px 0 0;
+	}
+
+	.order-last {
+		@include mq(lg) {
+			order: 2;
+		}
+	}
+	.order-first {
+		@include mq(lg) {
+			order: 1;
+			padding-left: 68px;
+		}
+	}
+	&__title {
+		color: $color-1;
+		@include mq(lg) {
+			margin-bottom: 40px;
+		}
+	}
+	&__block {
+		margin: 0 -20px 27px;
+		padding: 37px 10px;
+		@include mq(sm) {
+			padding: 37px 24px;
+		}
+
+		@include mq(lg) {
+			padding: 45px 0 56px;
+			margin: 0 0 50px;
+		}
+	}
+	&__elem {
+		&:not(:only-child) {
+			margin-bottom: 80px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	.col {
+		&-lg-40 {
+			text-align: center;
+
+			@media all and (max-width: 991px) {
+				order: 2;
+			}
+		}
+	}
+	.founder-face {
+		margin-bottom: 28px;
+		img {
+			width: 90px;
+			height: 90px;
+			@include mq(lg) {
+				width: 120px;
+				height: 120px;
+			}
+		}
+	}
+	.founder-bio {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		p {
+			margin-bottom: 30px;
+			@include mq(lg) {
+				margin-bottom: 0;
+				max-width: 90%;
+			}
+		}
+	}
+}

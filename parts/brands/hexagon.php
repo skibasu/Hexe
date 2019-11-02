@@ -12,8 +12,8 @@ if( isset($link_href) && !empty($link_href) ){
 
 $color = get_field('brand_logo_border_color', $p_id);
 
-$fill = $color ? "fill:".$color.";" : null;
-$stroke = $color ? "stroke:".$color.";" : null;
+$fill = $color ? "fill:".$color.";" : "fill:#fff;";
+$stroke = $color ? "stroke:".$color.";" : "stroke:#ffffff;";
 ?>
 
 <svg xmlns="http://www.w3.org/2000/svg"  width="409.346" height="354.313" viewBox="0 0 409.346 354.313">

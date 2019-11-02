@@ -1,0 +1,90 @@
+.block-our-values {
+	background: {
+		image: url(../images/backgrounds/atom-bgr.png);
+		size: cover;
+		position: center center;
+		repeat: no-repeat;
+	}
+	@include mq(xl) {
+		background: {
+			image: url(../images/backgrounds/atom-bgr.png);
+			size: contain;
+			position: bottom right;
+			repeat: no-repeat;
+		}
+	}
+	.block-two-columns {
+		padding: 43px 0 40px;
+		@include mq(lg) {
+			padding: 90px 0 105px;
+		}
+	}
+
+	.hexagon {
+		margin: 0 auto;
+		flex-direction: column;
+		width: 280px;
+		height: 211px;
+		@include mq(sm) {
+			width: 379px;
+			height: 286px;
+		}
+
+		@include mq(xl) {
+			width: 383px;
+			height: 332px;
+		}
+
+		path {
+			fill-opacity: 1;
+		}
+		p {
+			position: relative;
+			z-index: 1;
+			text-align: center;
+
+			font-family: $font-light;
+			max-width: 56%;
+			font-size: 13px;
+			@include mq(sm) {
+				font-size: 18px;
+			}
+			@include mq(xl) {
+				max-width: 70%;
+			}
+		}
+	}
+	&__values {
+		display: block;
+		padding-bottom: 60px;
+		@include mq(xl) {
+			padding-bottom: 270px;
+		}
+	}
+	&__title {
+		color: $color-1;
+		@include mq(xxl) {
+			margin-bottom: -56px;
+		}
+	}
+	&__row {
+		display: block;
+		@include mq(xl) {
+			display: flex;
+			width: 1170px;
+		}
+	}
+	&__column {
+		@media all and (max-width: 1199px) {
+			transform: none !important;
+		}
+	}
+	&__name,
+	&__description {
+		position: relative;
+		z-index: 1;
+	}
+	&__name {
+		margin-bottom: 10px;
+	}
+}
