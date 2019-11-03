@@ -51,8 +51,49 @@
 		color: $color-black;
 		background-color: $color-white;
 		padding: 11px 37px;
+		&:hover {
+			color: $color-black;
+		}
 		@include mq(lg) {
 			padding: 10px 23px;
+		}
+	}
+	&--apply {
+		background-color: $color-white;
+		color: $color-black;
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+
+		margin: 0 auto;
+		font-size: 15px;
+		line-height: 1;
+		@include mq(sm) {
+			font-size: 18px;
+			width: 270px;
+		}
+		@include mq(lg) {
+			line-height: inherit;
+			font-size: 18px;
+			display: inline-flex;
+			justify-content: space-between;
+			margin: 0;
+			width: auto;
+			padding: 13px 60px;
+		}
+
+		&:before {
+			display: block;
+			content: '';
+			width: 24px;
+			height: 24px;
+			margin-right: 10px;
+			background: {
+				image: url('../images/icons/messenger.png');
+				size: 24px 24px;
+				repeat: no-repeat;
+			}
 		}
 	}
 }

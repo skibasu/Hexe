@@ -8,7 +8,10 @@ class ContentBlock {
 		'block_map'		            => 'parts/blocks/block-map',
         'block_our_values'		    => 'parts/blocks/block-our-values',
         'block_our_founders'        => 'parts/blocks/block-our-founders',
-        'block_career_job'          => 'parts/blocks/block-career'
+        'block_career_job'          => 'parts/blocks/block-career',
+        'block_informations'        => 'parts/blocks/block-informations',
+        'block_competition_details' => 'parts/blocks/block-competition-details',
+        'block_contest'             => 'parts/blocks/block-contest'
 
     );
 

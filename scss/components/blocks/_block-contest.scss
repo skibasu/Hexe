@@ -1,0 +1,13 @@
+.block-contest {
+	padding-bottom: 48px;
+	@include mq(lg) {
+		padding-bottom: 70px;
+	}
+
+	.block-two-columns {
+		padding: 54px 0 57px;
+		@include mq(lg) {
+			padding: 108px 0 65px;
+		}
+	}
+}

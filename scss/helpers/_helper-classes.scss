@@ -115,3 +115,152 @@
 		font-size: 18px;
 	}
 }
+
+.page-box {
+	padding: 50px 15px 34px;
+	@include mq(sm) {
+		padding: 50px 60px 34px 40px;
+	}
+
+	background-color: $color-1;
+	color: $color-white;
+	margin: 0 -20px;
+	@include mq(lg) {
+		margin: 0;
+		padding: 80px 70px 66px;
+	}
+	&__row {
+		padding: 0;
+		margin: 0 -15px;
+		list-style: none;
+		counter-reset: counter;
+	}
+	&__title {
+		font-size: 24px;
+		margin-bottom: 32px;
+		@include mq(sm) {
+			font-size: 24px;
+		}
+
+		@include mq(lg) {
+			font-size: 48px;
+			margin-bottom: 40px;
+		}
+	}
+	li.col {
+		&:not(:last-child) {
+			margin: 0 0 35px;
+			@include mq(lg) {
+				margin: 0;
+			}
+		}
+		counter-increment: counter;
+		display: flex;
+		@include mq(lg) {
+			display: block;
+			margin: 0;
+		}
+		&:before {
+			flex: 0 0 auto;
+			margin-right: 20px;
+			content: counter(counter);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 54px;
+			height: 48px;
+			font-size: 36px;
+			font-weight: 700;
+			margin-bottom: 15px;
+			color: $color-1;
+			text-align: center;
+			background: {
+				image: url('../images/borders/hexagon.svg');
+				repeat: no-repeat;
+				size: contain;
+			}
+			@include mq(lg) {
+				width: 68px;
+				height: 59px;
+				margin-right: 0;
+			}
+		}
+	}
+	&--a {
+		padding: 40px 15px;
+		@include mq(sm) {
+			padding: 40px;
+		}
+
+		@include mq(lg) {
+			padding: 48px 70px 65px;
+		}
+
+		color: $color-black;
+		background-color: $color-white;
+		box-shadow: 0 0 25px rgba(6, 28, 49, 0.05);
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			@include mq(lg) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+.page-box-mini {
+	background-color: $color-1;
+	color: $color-white;
+
+	text-align: center;
+	@include mq(lg) {
+		padding: 0;
+		//padding: 30px 25px;
+		text-align-last: left;
+	}
+	&__inner-wrapper {
+		padding: 34px 25px;
+		@include mq(lg) {
+			padding: 25px 30px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	&__title {
+		font-weight: 400;
+		text-transform: uppercase;
+		@include mq(lg) {
+			margin: 0 70px 0 0;
+		}
+	}
+}
+
+.date {
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	&:before {
+		content: '';
+		display: inline-block;
+		margin-right: 10px;
+		width: 16px;
+		height: 16px;
+		@include mq(lg) {
+			width: 24px;
+			height: 24px;
+		}
+
+		background: {
+			image: url('../images/icons/callendar.svg');
+			size: cover;
+			repeat: no-repeat;
+		}
+	}
+}

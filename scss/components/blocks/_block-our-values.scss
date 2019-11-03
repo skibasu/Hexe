@@ -57,6 +57,10 @@
 	&__values {
 		display: block;
 		padding-bottom: 60px;
+		margin: 0 -30px;
+		@include mq(sm) {
+			margin: 0;
+		}
 		@include mq(xl) {
 			padding-bottom: 270px;
 		}

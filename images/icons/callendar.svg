@@ -1,0 +1,27 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" width="22.969" height="23.28" viewBox="0 0 22.969 23.28">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #9b9b9b;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Path" class="cls-1" d="M217.364,2346.92a1.614,1.614,0,0,0,1.616-1.62v-1.68a1.616,1.616,0,1,0-3.231,0v1.68A1.614,1.614,0,0,0,217.364,2346.92Z" transform="translate(-200.156 -2342)"/>
+  <path id="Shape" class="cls-1" d="M223.105,2344.79h-3.252v0.83a2.46,2.46,0,1,1-4.92,0v-0.83h-6.564v0.83a2.461,2.461,0,0,1-4.921,0v-0.83l-3.283-.04v20.55h21.326l1.639-.01Zm-1.616,18.87H201.807v-13.12h19.684v13.12h0Z" transform="translate(-200.156 -2342)"/>
+  <path id="Path-2" data-name="Path" class="cls-1" d="M205.882,2346.92a1.615,1.615,0,0,0,1.617-1.62v-1.68a1.616,1.616,0,1,0-3.231,0v1.68A1.613,1.613,0,0,0,205.882,2346.92Z" transform="translate(-200.156 -2342)"/>
+  <rect id="Rectangle" class="cls-2" x="8.219" y="10.31" width="2.594" height="2.28"/>
+  <rect id="Rectangle-2" data-name="Rectangle" class="cls-2" x="12.407" y="10.31" width="2.562" height="2.28"/>
+  <rect id="Rectangle-3" data-name="Rectangle" class="cls-2" x="16.282" y="10.31" width="2.562" height="2.28"/>
+  <path id="Rectangle-4" data-name="Rectangle" class="cls-1" d="M208.375,2356.09h2.594v2.28h-2.594v-2.28Z" transform="translate(-200.156 -2342)"/>
+  <path id="Rectangle-5" data-name="Rectangle" class="cls-1" d="M212.562,2356.09h2.563v2.28h-2.563v-2.28Z" transform="translate(-200.156 -2342)"/>
+  <path id="Rectangle-6" data-name="Rectangle" class="cls-1" d="M216.437,2356.09H219v2.28h-2.563v-2.28Z" transform="translate(-200.156 -2342)"/>
+  <rect id="Rectangle-7" data-name="Rectangle" class="cls-2" x="8.219" y="17.94" width="2.594" height="2.28"/>
+  <path id="Rectangle-8" data-name="Rectangle" class="cls-1" d="M204.281,2356.09h2.563v2.28h-2.563v-2.28Z" transform="translate(-200.156 -2342)"/>
+  <rect id="Rectangle-9" data-name="Rectangle" class="cls-2" x="4.125" y="17.94" width="2.563" height="2.28"/>
+  <rect id="Rectangle-10" data-name="Rectangle" class="cls-2" x="12.407" y="17.94" width="2.562" height="2.28"/>
+  <rect id="Rectangle-11" data-name="Rectangle" class="cls-2" x="16.282" y="17.94" width="2.562" height="2.28"/>
+</svg>
