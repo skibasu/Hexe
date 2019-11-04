@@ -1,17 +1,16 @@
 <?php
-/**
- * The 404 page template.
- *
- * @package    WordPress
- * @subpackage themeName
- * @since      themeName 1.0
- */
-
 get_header();
+the_post();
 ?>
-	<main class="page-content page-content--404">
-		<div class="container">
-			<h1><?php _e( '404 - Not found.' ); ?></h1>
+<main class="page-content">
+<?php 
+	
+get_template_part('parts/hero/hero'); 
+
+?> 
+	<section class="page-404">
+		<div class="container block-content">
+			<h1 class="page-404__title"><?php _e( '404 - Not found.' ); ?></h1>
 			<h2>
 				<?php _e( 'We\'re sorry, but the page you are looking for cannot be found. What should you do at this point? Here are some options:', 'themeName' ); ?>
 			</h2>
@@ -23,6 +22,8 @@ get_header();
 				</li>
 			</ul>			
 		</div>
-	</main>
+	</section>
+</main>
 <?php
 get_footer();
+?>

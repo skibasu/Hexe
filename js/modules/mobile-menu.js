@@ -20,7 +20,6 @@ class MobileMenu {
 			.to(this.menu, 0.4, {
 				opacity: 1
 			})
-
 			.staggerTo(this.liElem, 0.3, { opacity: 1, y: 0, ease: Power4.easeOut }, 0.1);
 	}
 

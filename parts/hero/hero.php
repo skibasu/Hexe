@@ -31,10 +31,13 @@ $style = $hero ? " style='background-image:url($hero);'" : null;
         get_template_part('parts/hero/hero-home-page');
 
     }
+    elseif (is_page() && get_the_ID() == 24 ) {   
+        /* if is contact page */
+         get_template_part('parts/hero/hero-contact-page');
+    }
     elseif (is_page()) {
          /* if is page */
         get_template_part('parts/hero/hero-page');
-
     }
     elseif ( get_post_type() === 'brands' && is_single() ) {
         /* if is single brand */

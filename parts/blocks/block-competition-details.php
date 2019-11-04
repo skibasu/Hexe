@@ -45,7 +45,7 @@ if (have_rows('block_competition_details_columns')) :
         if ($date_in) :
         ?>
  
-            <p class="date"><?php echo $date_in  .$date_out;?></p>
+            <p class="date-with-icon"><?php echo $date_in  .$date_out;?></p>
         
         <?php
         endif;

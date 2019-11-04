@@ -21,3 +21,16 @@ function activate_support() {
 }
 
 add_action('init', 'activate_support');
+
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyBmyjBjZU82-wgJHTztX7J_xqeICV_AyA4');
+}
+add_action('acf/init', 'my_acf_init');
+
+function add_my_scripts(){
+
+    wp_register_script( 'gmap', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBmyjBjZU82-wgJHTztX7J_xqeICV_AyA4' );
+    wp_enqueue_script('gmap');   
+}
+
+add_action( 'wp_enqueue_scripts', 'add_my_scripts' );

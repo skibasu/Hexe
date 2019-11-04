@@ -32,7 +32,6 @@ body {
 	line-height: $line-height-base;
 
 	overflow-x: hidden;
-
 	margin: 0;
 
 	color: $text-color-base;
@@ -176,4 +175,53 @@ footer {
 .slick-slide,
 .slick-slide * {
 	outline: none !important;
+}
+
+.main-header-menu .current-menu-item {
+	a {
+		color: $color-3;
+		text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+	}
+}
+.page-id-24 {
+	.hero {
+		@include mq(lg) {
+			padding-bottom: 0;
+		}
+
+		.page-title {
+			text-align: center;
+			margin-bottom: 46px;
+			@include mq(lg) {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.block-contact-form {
+		color: $color-black;
+		margin: 0 -30px;
+		@include mq(lg) {
+			margin: 0 auto;
+			transform: translateY(50px);
+		}
+		.container {
+			padding: 0;
+			@include mq(lg) {
+				padding: 0 30px;
+				margin: 0;
+			}
+		}
+	}
+}
+.privacy-policy,
+.page-404 {
+	&__title {
+		color: $color-1;
+	}
+	.block-content {
+		padding: 40px 30px;
+		@include mq(xl) {
+			padding: 100px 30px;
+		}
+	}
 }

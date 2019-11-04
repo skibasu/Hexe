@@ -243,9 +243,13 @@
 }
 
 .date {
+	margin-bottom: 10px;
+}
+
+.date-with-icon {
+	margin-bottom: 10px;
 	display: flex;
 	align-items: center;
-	margin-bottom: 10px;
 	&:before {
 		content: '';
 		display: inline-block;
@@ -263,4 +267,34 @@
 			repeat: no-repeat;
 		}
 	}
+}
+
+.fixed-header {
+	position: fixed !important;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	right: 0;
+	transform: translateY(-150%);
+	background-color: $color-7;
+	.main-header__wrapper,
+	.mobile-menu__wrapper {
+		padding: 10px;
+		.page-logo {
+			width: 82px;
+			@include mq(lg) {
+				width: 100px;
+				padding: 10px 0;
+			}
+		}
+	}
+
+	.main-header__main-nav ul li a {
+		@include mq(lg) {
+			font-size: 15px;
+		}
+	}
+}
+
+.reset {
 }

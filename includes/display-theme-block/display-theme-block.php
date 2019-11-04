@@ -5,13 +5,14 @@ class ContentBlock {
 		'block_two_columns'			=> 'parts/blocks/block-two-columns',
 		'block_our_brands'			=> 'parts/blocks/block-our-brands',
 		'block_latest_news'			=> 'parts/blocks/block-latest-posts',
-		'block_map'		            => 'parts/blocks/block-map',
+		'block_contact_map'		    => 'parts/blocks/block-map',
         'block_our_values'		    => 'parts/blocks/block-our-values',
         'block_our_founders'        => 'parts/blocks/block-our-founders',
         'block_career_job'          => 'parts/blocks/block-career',
         'block_informations'        => 'parts/blocks/block-informations',
         'block_competition_details' => 'parts/blocks/block-competition-details',
-        'block_contest'             => 'parts/blocks/block-contest'
+        'block_contest'             => 'parts/blocks/block-contest',
+        'block_contact'             => 'parts/blocks/block-contact-form'
 
     );
 
