@@ -1,12 +1,13 @@
-import screenLock from 'http://localhost/hexe/wp-content/themes/hexe/js/constants/lock-screen.js';
+import screenLock from '../constants/lock-screen.js';
 
 class MobileMenu {
-	constructor() {
-		this.menu = $('.mobile-menu');
-		this.nav = $('.mobile-menu nav');
-		this.liElem = $('.mobile-menu nav li');
-		this.hamburger = $('.hamburger');
-		this.closeBurger = $('.hamburger.closeBurger');
+	constructor(header) {
+		this.header = $(header);
+		this.menu = this.header.find('.mobile-menu');
+		this.nav = this.header.find('.mobile-menu nav');
+		this.liElem = this.header.find('.mobile-menu nav li');
+		this.hamburger = this.header.find('.hamburger');
+		this.closeBurger = this.header.find('.hamburger.closeBurger');
 		this.mq = window.matchMedia('(min-width:992px)');
 		this.tl = new TimelineMax({ paused: true })
 			.set(this.menu, { display: 'none' })
@@ -23,35 +24,31 @@ class MobileMenu {
 			.staggerTo(this.liElem, 0.3, { opacity: 1, y: 0, ease: Power4.easeOut }, 0.1);
 	}
 
-	init = () => {
-		const { hamburger, menuToggle, mq, closeMenu } = this;
-		hamburger.on('click', menuToggle);
-		closeMenu();
-		mq.addListener(closeMenu);
-	};
+	init() {
+		this.hamburger.on('click', this.menuToggle.bind(this));
+		this.closeMenu();
+		this.mq.addListener(this.closeMenu.bind(this));
+	}
 
-	menuToggle = () => {
-		const { hamburger, tl, nav } = this;
-
+	menuToggle() {
 		if (this.hamburger.hasClass('closeBurger')) {
-			tl.reverse();
+			this.tl.reverse();
 			screenLock.unlock();
-			hamburger.removeClass('closeBurger');
+			this.hamburger.removeClass('closeBurger');
 		} else {
-			nav.scrollTop(0);
-			tl.play();
+			this.nav.scrollTop(0);
+			this.tl.play();
 			screenLock.lock();
-			hamburger.addClass('closeBurger');
+			this.hamburger.addClass('closeBurger');
 		}
-	};
-	closeMenu = () => {
-		const { mq, menu, hamburger, tl } = this;
-		if (mq.matches) {
-			tl.reverse();
+	}
+	closeMenu() {
+		if (this.mq.matches) {
+			this.tl.reverse();
 			screenLock.unlock();
-			hamburger.removeClass('closeBurger');
+			this.hamburger.removeClass('closeBurger');
 		}
-	};
+	}
 }
 
 export default MobileMenu;

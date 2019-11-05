@@ -275,7 +275,8 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	transform: translateY(-150%);
+	//transform: translateY(-100%);
+
 	background-color: $color-7;
 	.main-header__wrapper,
 	.mobile-menu__wrapper {
@@ -294,7 +295,4 @@
 			font-size: 15px;
 		}
 	}
-}
-
-.reset {
 }

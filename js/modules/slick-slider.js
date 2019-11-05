@@ -23,9 +23,9 @@ class Slider {
 		this.config = { ...this.defaultConf };
 		this.elem = $(elem);
 	}
-	init = () => {
+	init() {
 		this.elem.slick(this.config);
-	};
+	}
 }
 
 export default Slider;

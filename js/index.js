@@ -1,27 +1,26 @@
-import Variables from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/variables.js';
-import MobileMenu from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/mobile-menu.js';
-import onToggleLightbox from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/on-toggle-lightbox.js';
-import brandsOrder from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/brands-orders.js';
-import Slider from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/slick-slider.js';
-import initMap from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/google-map.js';
-import area from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/textarea-height.js';
-import loader from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/page-loader.js';
-import SlidingHeader from 'http://localhost/hexe/wp-content/themes/hexe/js/modules/sliding-header.js';
+import Variables from './modules/variables';
+import MobileMenu from './modules/mobile-menu';
+import onToggleLightbox from './modules/on-toggle-lightbox.js';
+import BrandsOrder from './modules/brands-orders.js';
+import Slider from './modules/slick-slider.js';
+import initMap from './modules/google-map.js';
+import area from './modules/textarea-height.js';
+import loader from './modules/page-loader';
+import SlidingHeader from './modules/sliding-header.js';
+import formStyle from './modules/contact-form-styles';
 
 const variables = new Variables();
-const menu = new MobileMenu();
-const brands = new brandsOrder();
+const menu = new MobileMenu('#header');
+const scrollMenu = new MobileMenu('#scroll-header');
+const brands = new BrandsOrder();
 const slider = new Slider('.block-latest-news__slick-slider');
 const fixedHeader = new SlidingHeader('.fixed-header', '.static-header');
-/* init */
-(window.init = () => {
-	fixedHeader.init();
-})();
 
 /* Ready */
 $(document).ready(() => {
+	fixedHeader.init();
 	const maps = $('.acf-map');
-
+	formStyle();
 	if (maps.length) {
 		$('.acf-map').each(function() {
 			const map = initMap($(this));
@@ -38,6 +37,7 @@ $(window).on('load', () => {
 	loader();
 	brands.init();
 	menu.init();
+	scrollMenu.init();
 
 	if ($('.posts-content').length) {
 		onToggleLightbox('.posts-content');
@@ -54,10 +54,9 @@ $(window).on('load', () => {
 	variables.setMobileMenuHeight('.mobile-menu__nav');
 	variables.setHeroPadding('.hero');
 });
-
 /* Resize */
 $(window).on('resize', () => {
-	fixedHeader.init();
+	//fixedHeader.init();
 	variables.setMobileMenuHeight('.mobile-menu__nav');
 	variables.setHeroPadding('.hero');
 });

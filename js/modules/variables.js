@@ -5,7 +5,7 @@ class Variables {
 		this.windowHeight = $(window).height();
 	}
 
-	setMobileMenuHeight = elem => {
+	setMobileMenuHeight(elem) {
 		const e = $(elem);
 
 		this.reloadVariables();
@@ -14,8 +14,8 @@ class Variables {
 		const elemHeight = windowHeight - headerHeight;
 
 		e.css('height', elemHeight);
-	};
-	setHeroPadding = elem => {
+	}
+	setHeroPadding(elem) {
 		const e = $(elem);
 
 		this.reloadVariables();
@@ -23,13 +23,13 @@ class Variables {
 		const { headerHeight } = this;
 
 		e.css('padding-top', headerHeight);
-	};
+	}
 
-	reloadVariables = () => {
+	reloadVariables() {
 		this.headerHeight = $('.main-header').height();
 		this.mobileHeaderHeight = $('.mobil-menu__header').height();
 		this.windowHeight = $(window).height();
-	};
+	}
 }
 
 export default Variables;

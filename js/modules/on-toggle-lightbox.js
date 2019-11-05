@@ -1,4 +1,4 @@
-import screenLock from 'http://localhost/hexe/wp-content/themes/hexe/js/constants/lock-screen.js';
+import screenLock from '../constants/lock-screen';
 
 const onToggleLightbox = elem => {
 	const wrapper = $(elem);
@@ -6,7 +6,6 @@ const onToggleLightbox = elem => {
 	const postDataWrapper = $('.post-data');
 	const lightbox = $('.posts-content__lightbox');
 	const buttonOpen = $('.on-open');
-
 	const WPAJAX = example_ajax_obj.ajaxurl;
 
 	const tl = new TimelineMax({ paused: true })

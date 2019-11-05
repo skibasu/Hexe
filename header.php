@@ -14,11 +14,10 @@ get_template_part('parts/global/html-head');
 <body <?php body_class(); ?> style="overflow:hidden;height:100%">
 <?php get_template_part('parts/global/page-loader'); ?>
 <div id="page">
-	<header class="main-header static-header">
+	<header id="header" class="main-header static-header">
 		<div class="container">
 			<div class="main-header__wrapper">
-				
-				
+					
 			<?php 
 
 			get_template_part('parts/global/page-logo');
@@ -35,16 +34,12 @@ get_template_part('parts/global/html-head');
 			<?php get_template_part('parts/global/mobile-menu'); ?>
 			
 		</div>
-
-		
-
 	</header>
 
-	<header class="main-header fixed-header">
+	<header id="scroll-header" class="main-header fixed-header">
 		<div class="container">
 			<div class="main-header__wrapper">
-				
-				
+					
 			<?php 
 
 			get_template_part('parts/global/page-logo');
@@ -61,7 +56,7 @@ get_template_part('parts/global/html-head');
 			<?php get_template_part('parts/global/mobile-menu'); ?>
 			
 		</div>
-
-		
-
 	</header>
+
+
+	

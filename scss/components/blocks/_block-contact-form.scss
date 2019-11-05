@@ -60,6 +60,7 @@
 			display: block;
 		}
 		input,
+		select,
 		textarea {
 			color: $color-black;
 			outline: none;
@@ -69,7 +70,8 @@
 			border-right: none;
 			border-bottom: 1px solid $color-black;
 		}
-		input:not([type='submit']) {
+		input:not([type='submit']),
+		select {
 			padding: 8px 0 12px;
 		}
 		input[type='submit'] {
@@ -84,6 +86,11 @@
 			resize: none;
 			white-space: nowrap;
 			overflow: auto;
+		}
+		select[name='subject'] {
+			option:first-child {
+				color: $color-black;
+			}
 		}
 	}
 
@@ -139,4 +146,58 @@
 	/* Firefox 18- */
 	color: $color-black;
 	font-family: inherit;
+}
+
+.chosen-container-single .chosen-single {
+	color: $color-black;
+	outline: none !important;
+	background: transparent !important;
+	border-top: none !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: 1px solid $color-black !important;
+	border-radius: 0 !important;
+	padding: 8px 0 12px !important;
+}
+.chosen-single {
+	display: block !important;
+	font-size: 16px !important;
+	line-height: 1.15 !important;
+	height: 100% !important;
+	b {
+		background-position: 3% 11px !important;
+	}
+}
+.chosen-results {
+	list-style-type: none !important;
+	padding: 5px 0 !important;
+	li {
+		list-style-type: none !important;
+	}
+}
+
+.chosen-container.chosen-container-single.chosen-container-single-nosearch {
+	* {
+		box-shadow: none !important;
+	}
+	.chosen-drop {
+		box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35) !important;
+		margin: -1px -10px 0 !important;
+	}
+}
+.chosen-drop {
+	border-radius: 0 !important;
+	font-size: 16px !important;
+	border: none !important;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.35) !important;
+	li {
+		padding: 8px 10px 12px !important;
+	}
+
+	li:before {
+		display: none !important;
+	}
+}
+.highlighted {
+	background: $color-1 !important;
 }

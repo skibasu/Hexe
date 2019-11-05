@@ -6,7 +6,7 @@ class BrandOrders {
 		this.translateRight = { transform: 'translate(82px, calc(50% + 1.5px))' };
 	}
 
-	init = () => {
+	init() {
 		this.checkMedia();
 		this.configuration();
 
@@ -14,9 +14,9 @@ class BrandOrders {
 			this.checkMedia();
 			this.configuration();
 		});
-	};
+	}
 
-	checkMedia = () => {
+	checkMedia() {
 		if (!this.mq.matches) {
 			this.translateLeft = { transform: 'translate(-100px, calc(50% + 1.5px))' };
 			this.translateRight = { transform: 'translate(100px, calc(50% + 1.5px))' };
@@ -24,19 +24,14 @@ class BrandOrders {
 			this.translateLeft = { transform: 'translate(-82px, calc(50% + 1.5px))' };
 			this.translateRight = { transform: 'translate(82px, calc(50% + 1.5px))' };
 		}
-	};
+	}
 
-	configuration = () => {
+	configuration() {
 		this.row.each(key => {
 			const wrapper = $(this.row[key]);
 			const elemLength = wrapper.find('.brand-archive__column').length;
 
-			if (elemLength == 1) {
-				console.log('wrapper width 1 element');
-			}
-
 			if (elemLength == 2) {
-				console.log('wrapper width 2 elements');
 				wrapper.css('justify-content', 'flex-end');
 				wrapper.find('.brand-archive__column--2').css({
 					order: '3',
@@ -45,7 +40,6 @@ class BrandOrders {
 			}
 
 			if (elemLength == 3) {
-				console.log('wrapper width 3 elements');
 				wrapper.find('.brand-archive__column--1').css({ order: '2' });
 				wrapper.find('.brand-archive__column--2').css({
 					order: '3',
@@ -56,7 +50,7 @@ class BrandOrders {
 					.css({ order: '1', ...this.translateRight });
 			}
 		});
-	};
+	}
 }
 
 export default BrandOrders;
