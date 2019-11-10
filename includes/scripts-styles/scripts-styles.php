@@ -1,7 +1,7 @@
 <?php
 function my_scripts() {
 
-    wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri(). '/css/style.css', array() );
+    wp_enqueue_style( 'theme-style', get_stylesheet_directory_uri(). '/public/style.css', array() );
 
     wp_enqueue_style( 'slick-style', get_stylesheet_directory_uri(). '/css/vendors/slick.css', array() );
 
@@ -9,10 +9,14 @@ function my_scripts() {
 
     wp_enqueue_style( 'chosen', get_stylesheet_directory_uri(). '/css/vendors/chosen.css', array() );
 
+    wp_enqueue_style( 'simple-bar-css',  'https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css', array() );
+   
+
     wp_deregister_script( 'jquery' );
 
     wp_register_script( 'jquery', get_template_directory_uri() . '/js/vendors/jQuery/jquery-3.4.1.min.js', array(), '3.4.1', true );
 
+    wp_enqueue_script( 'simple-bar-js', 'https://unpkg.com/simplebar@latest/dist/simplebar.min.js', array(), '2.1.3', true );
 
     wp_enqueue_script( 'gsapcssrule', get_template_directory_uri() . '/js/vendors/GreenSock/CSSRulePlugin.min.js', array(), '2.1.3', true );
 
@@ -22,7 +26,7 @@ function my_scripts() {
 
      wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/vendors/slick/slick.min.js', array(), '1.8.1', true );
 
-    wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/public/js/app.js', array('jquery'), '1.0', true );
+    wp_enqueue_script( 'theme-scripts', get_template_directory_uri() . '/public/app.js', array('jquery'), '1.0', true );
 
     wp_localize_script('theme-scripts', 'example_ajax_obj', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ));
 

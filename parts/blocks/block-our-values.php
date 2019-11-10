@@ -52,8 +52,15 @@ $vars = ['left_column' => $left_column, 'right_column' => $right_column];
                     </div>
                 </div>
                 <?php
+                $count = 0;
+                $locations = get_field("block_our_values_values");
 
-                if( $i == 3 || $k == count(get_field("block_our_values_values"))) :
+                if (is_array($locations)) {
+                    $count = count($locations);
+                }
+
+
+                if( $i == 3 || $k == $count) :
 
                 ?>
             </div>

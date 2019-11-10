@@ -20,6 +20,10 @@ if( $posts ) :
             $id = $p->ID;
             $logo_id = get_field('brand_logo', $id);
             $logo = wp_get_attachment_image($logo_id, 'brands-list-logo');
+
+            $logo_small_id = get_field('brand_front_page_logo', $id);
+            $logo_small = wp_get_attachment_image($logo_small_id, 'brands-list-logo');
+            
             $thumbnail = get_the_post_thumbnail($id, 'brands-list-thumbnail');
             $color = get_field('brand_color', $id);
 
@@ -36,11 +40,11 @@ if( $posts ) :
                     <div class="col-inner-wrapper">
                     <?php 
 
-                    if ( !empty($logo ) ) : 
+                    if ( !empty($logo ) || !empty($logo_small)) : 
 
                     ?>
                         <a href="<?php the_permalink($id);?>" class="block-our-brands__logo">
-                            <?php echo $logo; ?>
+                            <?php echo $logo_small ? $logo_small  : $logo ; ?>
                         </a>
                     <?php 
                     endif;

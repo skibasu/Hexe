@@ -11,7 +11,7 @@ if ( ! empty( $categories ) ) {
     }
 }
 ?>
- <article class="lightbox-post"> 
+ <article class="lightbox-post" data-simplebar> 
         
             <h3 class="lightbox-post__title"><?php the_title(); ?></h3>
            

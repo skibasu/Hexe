@@ -6,13 +6,13 @@
 	display: inline-block;
 	color: $color-white;
 	cursor: pointer;
-	padding: 11px 31px;
+	padding: 12px 31px 10px;
 	@include mq(sm) {
 		font-size: 15px;
 	}
 	@include mq(xl) {
 		font-size: 18px;
-		padding: 13px 42px;
+		padding: 14px 42px 12px;
 		letter-spacing: 1.28px;
 	}
 	text-transform: uppercase;
@@ -26,10 +26,10 @@
 	&--d,
 	&--e,
 	&--f {
-		padding: 12px 41px;
+		padding: 13px 41px 11px;
 		@include mq(lg) {
 			font-size: 18px;
-			padding: 11px 31px;
+			padding: 12px 31px 10px;
 		}
 	}
 	&--b {
@@ -50,12 +50,12 @@
 	&--f {
 		color: $color-black;
 		background-color: $color-white;
-		padding: 11px 37px;
+		padding: 12px 37px 10px;
 		&:hover {
 			color: $color-black;
 		}
 		@include mq(lg) {
-			padding: 10px 23px;
+			padding: 11px 23px 9px;
 		}
 	}
 	&--apply {

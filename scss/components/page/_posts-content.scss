@@ -54,7 +54,11 @@
 		display: none;
 		align-items: center;
 		justify-content: center;
-		padding: 30px;
+		padding: 30px 0;
+		@include mq(sm) {
+			padding: 30px;
+		}
+
 		@include mq(xl) {
 			padding: 60px 100px;
 		}
@@ -73,7 +77,10 @@
 		.on-close {
 			cursor: pointer;
 			position: absolute;
-			right: 0;
+			right: 25px;
+			@include mq(sm) {
+				right: 0;
+			}
 			top: 0;
 			transform: translate(50%, -50%);
 			width: 44px;
@@ -90,10 +97,14 @@
 		opacity: 0;
 		width: 100%;
 		height: 100%;
-		padding: 15px 20px;
+		padding: 15px 0;
 		@include mq(lg) {
-			padding: 54px 100px;
+			padding: 54px 70px;
 			box-shadow: 0 0 25px rgba(6, 28, 49, 0.05);
+		}
+		.post-data {
+			height: 100%;
+			overflow: auto;
 		}
 	}
 	&__pagination {
@@ -148,10 +159,18 @@
 		}
 	}
 }
+.simplebar-scrollbar:before {
+	background: $color-7;
+}
 .lightbox-post {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
+	padding: 0 20px;
+	@include mq(lg) {
+		padding: 0 30px;
+	}
+
 	p {
 		margin: 0 0 18px;
 	}
@@ -295,4 +314,20 @@
 	&__content {
 		margin-bottom: 5px;
 	}
+}
+.simplebar-scrollbar:before {
+	position: absolute;
+	content: '';
+	background: $color-1 !important;
+	border-radius: 7px;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: opacity 0.2s linear;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+	/* When hovered, remove all transitions from drag handle */
+	opacity: 1 !important;
+	transition: opacity 0s linear;
 }

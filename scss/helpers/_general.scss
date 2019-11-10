@@ -10,6 +10,7 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	-webkit-overflow-scrolling: touch;
 }
 
 html,
@@ -220,6 +221,10 @@ footer {
 	}
 	.block-content {
 		padding: 40px 30px;
+		@include mq(lg) {
+			padding: 40px 30px;
+		}
+
 		@include mq(xl) {
 			padding: 100px 30px;
 		}
