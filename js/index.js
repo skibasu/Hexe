@@ -56,6 +56,7 @@ $(window).on("load", () => {
 });
 /* Resize */
 $(window).on("resize", () => {
+  //fixedHeader.init();
   variables.setMobileMenuHeight(".mobile-menu__nav");
   variables.setHeroPadding(".hero");
 });
